@@ -1,0 +1,33 @@
+<idea-plugin>
+    <id>io.github.liushiyou.pastetomd</id>
+    <name>Paste to Markdown</name>
+    <vendor email="opensource@example.com">liushiyou</vendor>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>org.intellij.plugins.markdown</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <applicationService serviceImplementation="io.github.liushiyou.pastetomd.settings.PasteToMarkdownSettings"/>
+        <applicationConfigurable
+                parentId="editor"
+                instance="io.github.liushiyou.pastetomd.settings.PasteToMarkdownConfigurable"
+                id="io.github.liushiyou.pastetomd.settings"
+                displayName="Paste to Markdown"/>
+        <copyPastePreProcessor implementation="io.github.liushiyou.pastetomd.paste.MarkdownPastePreProcessor"/>
+    </extensions>
+
+    <actions>
+        <action id="PasteToMarkdown.PasteOriginal"
+                class="io.github.liushiyou.pastetomd.actions.PasteOriginalAction"
+                text="Paste as Original"
+                description="Paste clipboard text without converting rich text to Markdown"/>
+        <action id="PasteToMarkdown.ReconvertClipboard"
+                class="io.github.liushiyou.pastetomd.actions.ReconvertClipboardAction"
+                text="Reconvert Clipboard to Markdown"
+                description="Convert the current clipboard content to Markdown and paste it into the editor"/>
+        <action id="PasteToMarkdown.ShowClipboardSource"
+                class="io.github.liushiyou.pastetomd.actions.ShowClipboardSourceAction"
+                text="Show Clipboard Rich Text Source"
+                description="Display clipboard HTML, RTF, and plain text source for debugging"/>
+    </actions>
+</idea-plugin>

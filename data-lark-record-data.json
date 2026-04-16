@@ -1,0 +1,5373 @@
+{
+  "isCut": false,
+  "rootId": "V7PhdByagoe92gxSMbslfcgQgTb",
+  "parentId": "V7PhdByagoe92gxSMbslfcgQgTb",
+  "blockIds": [
+    2,
+    3,
+    4,
+    10,
+    11,
+    12,
+    13,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    52,
+    54,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95
+  ],
+  "recordIds": [
+    "UtWMdEyjjoWhY4xNXQAledQxgOe",
+    "P9kld1D4Vo5Pi1xAvJzlSGfogIb",
+    "JvCZdCIDQoqpDfxtSxGlak7Rgch",
+    "VKnHdOsHVopU63x5arElusc2gRd",
+    "OFJCdK0Rko83Z1xRhBJl1ga8g8f",
+    "K06sdxV83onotrxfnqWlNxaZgce",
+    "ICNqdHskloiCL3xsZlGlxTsqgSb",
+    "NYzvdHxM3oPn0TxQFJul3RAbgBd",
+    "LFc2dYFb5oZdYgxuaNel3uRBgqf",
+    "Z6ACdkuL0oTA2ex2PeTl7tzUgPd",
+    "BsSWd4JbCo6aoox7mbDlubLLgad",
+    "DhJwdrarboUs1Sx57RPl2QJKgbw",
+    "VceedGlZxoVLFIxr1VIlNl6PgTd",
+    "NwR1dZVQYo4CoHx9DVilRMtXgiU",
+    "IR3Xd8mX7oeCO9xRkuPlfaZggSb",
+    "IPthdMZI2o07PjxQOHJlm7FigTd",
+    "FOhzdsr4xorIk2xnvzilrhkRgAZ",
+    "JvcudgodtoMmfpxJ2q8ltYvcgDX",
+    "HN6RdTdTKoiXbbx35ndlHZxkgKe",
+    "OCsWdLv4Ho5GCnxt4B6l2xJ7gKf",
+    "QxspdueOjoYah4xLLsila1sHg9b",
+    "QDvxdTUkvobkUhx9HMWlaiBFgZc",
+    "JydAdvhrxo67E6xsFE9lDH35gkc",
+    "JTlqda60qoAlPox4QsglQyrEgoc",
+    "KpEydwwBgoWPA6xb7bqlUsDRgOf",
+    "BlvXd19Dlo2xazxxFwDlWEX7glb",
+    "Gyt1dQCW3o2YphxHMZYlL6wqgXe",
+    "Ea72dAbUdoVo5uxX5LCl9VKagZf",
+    "WYrwdfZJPonutexLerelhOmSg4e",
+    "LvYsdZ2bRoLmr4xWesWluNLtgNe",
+    "AFRcdOsYwomm26xp31DlCEfEgvf",
+    "KdO7dXl0ooDlDpxqMLDlXuEHgNm",
+    "Hk29dqUIGoYO3XxELNKlVD32ggb",
+    "F5xbdY1BsofKqnx0YGclik9Pgad",
+    "FTR4dRH7yo3iOgxXRYwliKgAgwh",
+    "CJEzdTdfpo9rYKxpyRclhxqtg69",
+    "E86Pdm2cHoz2yDxTF8hlJ0JngZe",
+    "TBihdqt26ozvCyxp687lkxQVgUe",
+    "FjFydFgaDoGHTKxDkW3laSo6gth",
+    "QmaUd91M5o1pqmx4mW4luQe2gYX",
+    "AXqHdGRhnoRUrnxl3oolwgiIgpf",
+    "Z2z7dPgyWoJKtBxyyUclR134gQg",
+    "UUybdtZivotVYNxuACql6iv2gXc",
+    "Ui3OdoMgfoBBHFx0sWBlf3tTged",
+    "TalVd8m1XocoIjx7DGXl4KMbgGf",
+    "McStdz5xvohCcJxbQr7lA3Mkgdc",
+    "BAeFd8e1xovnPAxbrCvlaEjKgWq",
+    "GmoydxZdGoY6GkxLmbzl6mePgxh",
+    "LVS5dkteUogkaQxQazDlVxdPgmQ",
+    "S8b3dZRBXozDL9xFj9SlbSgigFe",
+    "HMv1djV3wodcU9xlq5ilnDf0gFu",
+    "AziXdFHy0ogo9axND1ZlcAS5gih"
+  ],
+  "recordMap": {
+    "UtWMdEyjjoWhY4xNXQAledQxgOe": {
+      "id": "UtWMdEyjjoWhY4xNXQAledQxgOe",
+      "snapshot": {
+        "type": "heading1",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+4"
+            },
+            "text": {
+              "0": "需求背景"
+            }
+          }
+        },
+        "align": "",
+        "folded": false,
+        "seq": "auto",
+        "seq_level": "auto"
+      }
+    },
+    "P9kld1D4Vo5Pi1xAvJzlSGfogIb": {
+      "id": "P9kld1D4Vo5Pi1xAvJzlSGfogIb",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "initialAttributedTexts": {
+            "text": {
+              "0": "需求概要： "
+            },
+            "attribs": {
+              "0": "*0+5*0*1*2+1"
+            }
+          },
+          "apool": {
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "inline-component",
+                "{\"id\":\"3c96484b-a092-4428-aef2-35f3b6ce5d12\",\"type\":\"mention_doc\",\"data\":{\"file_type\":16,\"icon_type\":22,\"token\":\"LLXLwpqWIivnqLkfyVicdjpznyb\",\"tenant_id\":\"6794770587811086337\",\"raw_url\":\"https://alphagroup.larkenterprise.com/wiki/LLXLwpqWIivnqLkfyVicdjpznyb?from=navigation\",\"title\":\"电商全流程框架｜E-commerce End-to-End Process Framework \"}}"
+              ],
+              "2": [
+                "link-id",
+                "788e7042-c071-408b-a766-5096fabb2fce"
+              ]
+            },
+            "nextNum": 3
+          }
+        },
+        "align": "",
+        "folded": false,
+        "text_indent": 1
+      }
+    },
+    "JvCZdCIDQoqpDfxtSxGlak7Rgch": {
+      "id": "JvCZdCIDQoqpDfxtSxGlak7Rgch",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "JvlydKovpoz5Y3xPk9kloAE7gBb",
+          "IQQjdWRvdo0IfexhGwhld8ptgWb",
+          "DWbwdASzjoe9HwxpiHnlGVsKgzf",
+          "URJUdNZwmockGhxTqaIlmTkSgXf",
+          "Uhwid4fPdojEXpxTSollO0iYgoe"
+        ],
+        "text": {
+          "initialAttributedTexts": {
+            "text": {
+              "0": "上级文档： "
+            },
+            "attribs": {
+              "0": "*0+5*0*1*2+1"
+            }
+          },
+          "apool": {
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "inline-component",
+                "{\"id\":\"9f0c34d5-8e14-4f0b-8de1-a400b8e14129\",\"type\":\"mention_doc\",\"data\":{\"file_type\":22,\"icon_type\":22,\"token\":\"SD3idWQmfooBJSxelGQlD60Ng9g\",\"tenant_id\":\"6794770587811086337\",\"raw_url\":\"https://alphagroup.sg.larkenterprise.com/docx/SD3idWQmfooBJSxelGQlD60Ng9g\",\"title\":\"JACO电商架构设计调研-汇总\"}}"
+              ],
+              "2": [
+                "link-id",
+                "aa7d5a8e-5c49-4953-abcc-33bcb1e02b44"
+              ]
+            },
+            "nextNum": 3
+          }
+        },
+        "align": "",
+        "folded": false,
+        "text_indent": 1
+      }
+    },
+    "JvlydKovpoz5Y3xPk9kloAE7gBb": {
+      "id": "JvlydKovpoz5Y3xPk9kloAE7gBb",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "JvCZdCIDQoqpDfxtSxGlak7Rgch",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+c"
+            },
+            "text": {
+              "0": "目前jaco电商方向选择"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "IQQjdWRvdo0IfexhGwhld8ptgWb": {
+      "id": "IQQjdWRvdo0IfexhGwhld8ptgWb",
+      "snapshot": {
+        "type": "ordered",
+        "parent_id": "JvCZdCIDQoqpDfxtSxGlak7Rgch",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 2,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+h"
+            },
+            "text": {
+              "0": "Cross-border 跨境自营"
+            }
+          }
+        },
+        "align": "",
+        "folded": false,
+        "seq": "1",
+        "text_indent": 0
+      }
+    },
+    "DWbwdASzjoe9HwxpiHnlGVsKgzf": {
+      "id": "DWbwdASzjoe9HwxpiHnlGVsKgzf",
+      "snapshot": {
+        "type": "ordered",
+        "parent_id": "JvCZdCIDQoqpDfxtSxGlak7Rgch",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 2,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+j"
+            },
+            "text": {
+              "0": "Marketplace 多商家入驻平台"
+            }
+          }
+        },
+        "align": "",
+        "folded": false,
+        "seq": "auto"
+      }
+    },
+    "URJUdNZwmockGhxTqaIlmTkSgXf": {
+      "id": "URJUdNZwmockGhxTqaIlmTkSgXf",
+      "snapshot": {
+        "type": "ordered",
+        "parent_id": "JvCZdCIDQoqpDfxtSxGlak7Rgch",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 2,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+i"
+            },
+            "text": {
+              "0": "Dropshipping 工厂代发货"
+            }
+          }
+        },
+        "align": "",
+        "folded": false,
+        "seq": "auto"
+      }
+    },
+    "Uhwid4fPdojEXpxTSollO0iYgoe": {
+      "id": "Uhwid4fPdojEXpxTSollO0iYgoe",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "JvCZdCIDQoqpDfxtSxGlak7Rgch",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+1r"
+            },
+            "text": {
+              "0": "基于目前给定的三种电商发展方向，在暂无确定具体模式前，调研各大平台设计模式，提供基于jaco 目前业务及规模的订单体系设计结论"
+            }
+          }
+        },
+        "align": "",
+        "folded": false,
+        "text_indent": 1
+      }
+    },
+    "VKnHdOsHVopU63x5arElusc2gRd": {
+      "id": "VKnHdOsHVopU63x5arElusc2gRd",
+      "snapshot": {
+        "type": "heading1",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+6"
+            },
+            "text": {
+              "0": "订单概念分析"
+            }
+          }
+        },
+        "align": "",
+        "folded": false,
+        "seq": "auto",
+        "seq_level": "auto"
+      }
+    },
+    "OFJCdK0Rko83Z1xRhBJl1ga8g8f": {
+      "id": "OFJCdK0Rko83Z1xRhBJl1ga8g8f",
+      "snapshot": {
+        "type": "heading2",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+6"
+            },
+            "text": {
+              "0": "订单流程模型"
+            }
+          }
+        },
+        "align": "",
+        "folded": false,
+        "seq": "auto",
+        "seq_level": "auto"
+      }
+    },
+    "K06sdxV83onotrxfnqWlNxaZgce": {
+      "id": "K06sdxV83onotrxfnqWlNxaZgce",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+1h"
+            },
+            "text": {
+              "0": "不同业务驱动下的订单模型差异巨大。Jaco 作为一个“直播 + 跨境 + 平台型”电商，需要兼容多种特性。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "ICNqdHskloiCL3xsZlGlxTsqgSb": {
+      "id": "ICNqdHskloiCL3xsZlGlxTsqgSb",
+      "snapshot": {
+        "type": "table",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "columns_id": [
+          "colea4f5643-7acf-4827-8eec-201bf444d6b1",
+          "col586f4a4b-a0cf-4410-957f-c57a71c75e1c",
+          "col1aa956d3-cd4f-4e7a-a3b0-1797858739bc",
+          "col2429c846-a838-44a5-bc3c-f2e97e455d7e",
+          "col87ae1f93-e44e-4038-aea9-0dbc4c55db4a"
+        ],
+        "rows_id": [
+          "rowb8ef1599-c5b2-40bc-b66e-434882bb3e95",
+          "row69c1ca0f-06e7-4b97-821d-87748a019d20",
+          "row2f49fa6f-3361-41a3-a6c2-0a5fd6dd479c",
+          "row61b7459d-b905-4879-a4da-75c8293342b1",
+          "row7c6fd95c-5984-42a0-8f99-fc9fa61fa69f",
+          "row9b8d669a-3433-40ac-9de6-d54e5684507c"
+        ],
+        "column_set": {
+          "col1aa956d3-cd4f-4e7a-a3b0-1797858739bc": {
+            "column_width": 269
+          },
+          "col2429c846-a838-44a5-bc3c-f2e97e455d7e": {
+            "column_width": 269
+          },
+          "col586f4a4b-a0cf-4410-957f-c57a71c75e1c": {
+            "column_width": 269
+          },
+          "col87ae1f93-e44e-4038-aea9-0dbc4c55db4a": {
+            "column_width": 269
+          },
+          "colea4f5643-7acf-4827-8eec-201bf444d6b1": {
+            "column_width": 100
+          }
+        },
+        "cell_set": {
+          "row2f49fa6f-3361-41a3-a6c2-0a5fd6dd479ccol1aa956d3-cd4f-4e7a-a3b0-1797858739bc": {
+            "merge_info": {
+              "row_span": 1,
+              "col_span": 1
+            },
+            "block_id": "XwpCdsqRJoO84bxwrFLl9ofmgOe"
+          },
+          "row2f49fa6f-3361-41a3-a6c2-0a5fd6dd479ccol2429c846-a838-44a5-bc3c-f2e97e455d7e": {
+            "merge_info": {
+              "row_span": 1,
+              "col_span": 1
+            },
+            "block_id": "DxFXdIuqYoPKyZxgLIClWKBggyd"
+          },
+          "row2f49fa6f-3361-41a3-a6c2-0a5fd6dd479ccol586f4a4b-a0cf-4410-957f-c57a71c75e1c": {
+            "merge_info": {
+              "row_span": 1,
+              "col_span": 1
+            },
+            "block_id": "IqUmdyGpFoWbcXxs9wQliE4bgIJ"
+          },
+          "row2f49fa6f-3361-41a3-a6c2-0a5fd6dd479ccol87ae1f93-e44e-4038-aea9-0dbc4c55db4a": {
+            "merge_info": {
+              "row_span": 1,
+              "col_span": 1
+            },
+            "block_id": "EJFrdF7buolFotxdRnflVqp6gxh"
+          },
+          "row2f49fa6f-3361-41a3-a6c2-0a5fd6dd479ccolea4f5643-7acf-4827-8eec-201bf444d6b1": {
+            "merge_info": {
+              "row_span": 1,
+              "col_span": 1
+            },
+            "block_id": "VcI8dsojZopWAsx0HBrlT0JEgkf"
+          },
+          "row61b7459d-b905-4879-a4da-75c8293342b1col1aa956d3-cd4f-4e7a-a3b0-1797858739bc": {
+            "merge_info": {
+              "row_span": 1,
+              "col_span": 1
+            },
+            "block_id": "LkaBdNeHvoXSZ3xBg6Mly9Uzg0c"
+          },
+          "row61b7459d-b905-4879-a4da-75c8293342b1col2429c846-a838-44a5-bc3c-f2e97e455d7e": {
+            "merge_info": {
+              "row_span": 1,
+              "col_span": 1
+            },
+            "block_id": "O41ZdaX74odVPWx4onblU1kHgPf"
+          },
+          "row61b7459d-b905-4879-a4da-75c8293342b1col586f4a4b-a0cf-4410-957f-c57a71c75e1c": {
+            "merge_info": {
+              "row_span": 1,
+              "col_span": 1
+            },
+            "block_id": "MLNtd0RrIoZQBIx4OTGl8T1EgCh"
+          },
+          "row61b7459d-b905-4879-a4da-75c8293342b1col87ae1f93-e44e-4038-aea9-0dbc4c55db4a": {
+            "merge_info": {
+              "row_span": 1,
+              "col_span": 1
+            },
+            "block_id": "SAvBdFkDeosKTexAMEMlAc4RgLd"
+          },
+          "row61b7459d-b905-4879-a4da-75c8293342b1colea4f5643-7acf-4827-8eec-201bf444d6b1": {
+            "merge_info": {
+              "row_span": 1,
+              "col_span": 1
+            },
+            "block_id": "VfCedFUQ5oCNxVxLtTvlLLMEg3b"
+          },
+          "row69c1ca0f-06e7-4b97-821d-87748a019d20col1aa956d3-cd4f-4e7a-a3b0-1797858739bc": {
+            "merge_info": {
+              "row_span": 1,
+              "col_span": 1
+            },
+            "block_id": "NdZ9dSoaPowN7Uxa16jlbYAsgch"
+          },
+          "row69c1ca0f-06e7-4b97-821d-87748a019d20col2429c846-a838-44a5-bc3c-f2e97e455d7e": {
+            "merge_info": {
+              "row_span": 1,
+              "col_span": 1
+            },
+            "block_id": "McCodE5M4o18rExZShNlSs1hgtb"
+          },
+          "row69c1ca0f-06e7-4b97-821d-87748a019d20col586f4a4b-a0cf-4410-957f-c57a71c75e1c": {
+            "merge_info": {
+              "row_span": 1,
+              "col_span": 1
+            },
+            "block_id": "MLUcd0tAnoCq0IxmavLlbdYigKe"
+          },
+          "row69c1ca0f-06e7-4b97-821d-87748a019d20col87ae1f93-e44e-4038-aea9-0dbc4c55db4a": {
+            "merge_info": {
+              "row_span": 1,
+              "col_span": 1
+            },
+            "block_id": "QyysdpaIvo5gp5xxARwlDihygPh"
+          },
+          "row69c1ca0f-06e7-4b97-821d-87748a019d20colea4f5643-7acf-4827-8eec-201bf444d6b1": {
+            "merge_info": {
+              "row_span": 1,
+              "col_span": 1
+            },
+            "block_id": "YEkpdi9LDotmJMx80fqlgB1bgVm"
+          },
+          "row7c6fd95c-5984-42a0-8f99-fc9fa61fa69fcol1aa956d3-cd4f-4e7a-a3b0-1797858739bc": {
+            "merge_info": {
+              "row_span": 1,
+              "col_span": 1
+            },
+            "block_id": "WrOAdbq7IoYhfCx4LPFltHlVggd"
+          },
+          "row7c6fd95c-5984-42a0-8f99-fc9fa61fa69fcol2429c846-a838-44a5-bc3c-f2e97e455d7e": {
+            "merge_info": {
+              "row_span": 1,
+              "col_span": 1
+            },
+            "block_id": "VMKIdmLZIon6YhxTxqGlZ3cKghJ"
+          },
+          "row7c6fd95c-5984-42a0-8f99-fc9fa61fa69fcol586f4a4b-a0cf-4410-957f-c57a71c75e1c": {
+            "merge_info": {
+              "row_span": 1,
+              "col_span": 1
+            },
+            "block_id": "Q9RKdDTcroHJ2Hx0ti7lqQcZg7K"
+          },
+          "row7c6fd95c-5984-42a0-8f99-fc9fa61fa69fcol87ae1f93-e44e-4038-aea9-0dbc4c55db4a": {
+            "merge_info": {
+              "row_span": 1,
+              "col_span": 1
+            },
+            "block_id": "SgS5dIJB3oX4lwxe1lblYcHAgKL"
+          },
+          "row7c6fd95c-5984-42a0-8f99-fc9fa61fa69fcolea4f5643-7acf-4827-8eec-201bf444d6b1": {
+            "merge_info": {
+              "row_span": 1,
+              "col_span": 1
+            },
+            "block_id": "BOs6d6CXloGFljxEmR8lhAEdgpg"
+          },
+          "row9b8d669a-3433-40ac-9de6-d54e5684507ccol1aa956d3-cd4f-4e7a-a3b0-1797858739bc": {
+            "merge_info": {
+              "row_span": 1,
+              "col_span": 1
+            },
+            "block_id": "NJgVdzgxyoUibix1VsIlnyMAgIf"
+          },
+          "row9b8d669a-3433-40ac-9de6-d54e5684507ccol2429c846-a838-44a5-bc3c-f2e97e455d7e": {
+            "merge_info": {
+              "row_span": 1,
+              "col_span": 1
+            },
+            "block_id": "HPwCdbReeojl9rxQsEzlczlogPY"
+          },
+          "row9b8d669a-3433-40ac-9de6-d54e5684507ccol586f4a4b-a0cf-4410-957f-c57a71c75e1c": {
+            "merge_info": {
+              "row_span": 1,
+              "col_span": 1
+            },
+            "block_id": "VDzedkOIRoGHp2xvjoQlWwqhgTc"
+          },
+          "row9b8d669a-3433-40ac-9de6-d54e5684507ccol87ae1f93-e44e-4038-aea9-0dbc4c55db4a": {
+            "merge_info": {
+              "row_span": 1,
+              "col_span": 1
+            },
+            "block_id": "TdSNdWGzWoWLdQxL5OIlKvSggKh"
+          },
+          "row9b8d669a-3433-40ac-9de6-d54e5684507ccolea4f5643-7acf-4827-8eec-201bf444d6b1": {
+            "merge_info": {
+              "row_span": 1,
+              "col_span": 1
+            },
+            "block_id": "XuNBdV1IgoEEjQxMR4ZliCoigx3"
+          },
+          "rowb8ef1599-c5b2-40bc-b66e-434882bb3e95col1aa956d3-cd4f-4e7a-a3b0-1797858739bc": {
+            "merge_info": {
+              "row_span": 1,
+              "col_span": 1
+            },
+            "block_id": "DQctdwSCfoZN15xopxrl2Kc4gtc"
+          },
+          "rowb8ef1599-c5b2-40bc-b66e-434882bb3e95col2429c846-a838-44a5-bc3c-f2e97e455d7e": {
+            "merge_info": {
+              "row_span": 1,
+              "col_span": 1
+            },
+            "block_id": "PnptdtqPAoCgmwxGMJvls2RmgNc"
+          },
+          "rowb8ef1599-c5b2-40bc-b66e-434882bb3e95col586f4a4b-a0cf-4410-957f-c57a71c75e1c": {
+            "merge_info": {
+              "row_span": 1,
+              "col_span": 1
+            },
+            "block_id": "MYT7dgBrIoNaywxJDsZlZOMNgPh"
+          },
+          "rowb8ef1599-c5b2-40bc-b66e-434882bb3e95col87ae1f93-e44e-4038-aea9-0dbc4c55db4a": {
+            "merge_info": {
+              "row_span": 1,
+              "col_span": 1
+            },
+            "block_id": "JvwddWHj8oIg0hxmEJMlikzBgke"
+          },
+          "rowb8ef1599-c5b2-40bc-b66e-434882bb3e95colea4f5643-7acf-4827-8eec-201bf444d6b1": {
+            "merge_info": {
+              "row_span": 1,
+              "col_span": 1
+            },
+            "block_id": "FR5kd6OZKo2zS9x9ut4lVWm0gUh"
+          }
+        }
+      }
+    },
+    "FR5kd6OZKo2zS9x9ut4lVWm0gUh": {
+      "id": "FR5kd6OZKo2zS9x9ut4lVWm0gUh",
+      "snapshot": {
+        "type": "table_cell",
+        "parent_id": "ICNqdHskloiCL3xsZlGlxTsqgSb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "NTmxdBtR1o6lNyxZJCQldEDKgxr"
+        ]
+      }
+    },
+    "NTmxdBtR1o6lNyxZJCQldEDKgxr": {
+      "id": "NTmxdBtR1o6lNyxZJCQldEDKgxr",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "FR5kd6OZKo2zS9x9ut4lVWm0gUh",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 2,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+2"
+            },
+            "text": {
+              "0": "维度"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "MYT7dgBrIoNaywxJDsZlZOMNgPh": {
+      "id": "MYT7dgBrIoNaywxJDsZlZOMNgPh",
+      "snapshot": {
+        "type": "table_cell",
+        "parent_id": "ICNqdHskloiCL3xsZlGlxTsqgSb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "HSlad0dndobLeBxCRK2lboqHgMg"
+        ]
+      }
+    },
+    "HSlad0dndobLeBxCRK2lboqHgMg": {
+      "id": "HSlad0dndobLeBxCRK2lboqHgMg",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "MYT7dgBrIoNaywxJDsZlZOMNgPh",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 2,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+c"
+            },
+            "text": {
+              "0": "货架电商 (天猫/京东)"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "DQctdwSCfoZN15xopxrl2Kc4gtc": {
+      "id": "DQctdwSCfoZN15xopxrl2Kc4gtc",
+      "snapshot": {
+        "type": "table_cell",
+        "parent_id": "ICNqdHskloiCL3xsZlGlxTsqgSb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "KXxBdxGc4o9fFkxTTTTl6G6egRz"
+        ]
+      }
+    },
+    "KXxBdxGc4o9fFkxTTTTl6G6egRz": {
+      "id": "KXxBdxGc4o9fFkxTTTTl6G6egRz",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "DQctdwSCfoZN15xopxrl2Kc4gtc",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 2,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+a"
+            },
+            "text": {
+              "0": "低价拼团 (拼多多)"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "PnptdtqPAoCgmwxGMJvls2RmgNc": {
+      "id": "PnptdtqPAoCgmwxGMJvls2RmgNc",
+      "snapshot": {
+        "type": "table_cell",
+        "parent_id": "ICNqdHskloiCL3xsZlGlxTsqgSb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "D4TndVz5govyrVxXvHZlDvMxgbg"
+        ]
+      }
+    },
+    "D4TndVz5govyrVxXvHZlDvMxgbg": {
+      "id": "D4TndVz5govyrVxXvHZlDvMxgbg",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "PnptdtqPAoCgmwxGMJvls2RmgNc",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 2,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+a"
+            },
+            "text": {
+              "0": "兴趣/直播 (抖音)"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "JvwddWHj8oIg0hxmEJMlikzBgke": {
+      "id": "JvwddWHj8oIg0hxmEJMlikzBgke",
+      "snapshot": {
+        "type": "table_cell",
+        "parent_id": "ICNqdHskloiCL3xsZlGlxTsqgSb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "XcaHd2oL2oEvfgx1czHldbKNghc"
+        ]
+      }
+    },
+    "XcaHd2oL2oEvfgx1czHldbKNghc": {
+      "id": "XcaHd2oL2oEvfgx1czHldbKNghc",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "JvwddWHj8oIg0hxmEJMlikzBgke",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 2,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+9"
+            },
+            "text": {
+              "0": "Jaco 建议方案"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "YEkpdi9LDotmJMx80fqlgB1bgVm": {
+      "id": "YEkpdi9LDotmJMx80fqlgB1bgVm",
+      "snapshot": {
+        "type": "table_cell",
+        "parent_id": "ICNqdHskloiCL3xsZlGlxTsqgSb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "CkvadG5bqoKpkDxtVFqlK9GJgqh"
+        ]
+      }
+    },
+    "CkvadG5bqoKpkDxtVFqlK9GJgqh": {
+      "id": "CkvadG5bqoKpkDxtVFqlK9GJgqh",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "YEkpdi9LDotmJMx80fqlgB1bgVm",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 2,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+4"
+            },
+            "text": {
+              "0": "订单模型"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "MLUcd0tAnoCq0IxmavLlbdYigKe": {
+      "id": "MLUcd0tAnoCq0IxmavLlbdYigKe",
+      "snapshot": {
+        "type": "table_cell",
+        "parent_id": "ICNqdHskloiCL3xsZlGlxTsqgSb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "UWEfdYDrRoV6fLxLq6blkXBLgde"
+        ]
+      }
+    },
+    "UWEfdYDrRoV6fLxLq6blkXBLgde": {
+      "id": "UWEfdYDrRoV6fLxLq6blkXBLgde",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "MLUcd0tAnoCq0IxmavLlbdYigKe",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 2,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+3*0*1+4*0+e"
+            },
+            "text": {
+              "0": "经典的母-子单结构，支持跨店满减合并下单。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "NdZ9dSoaPowN7Uxa16jlbYAsgch": {
+      "id": "NdZ9dSoaPowN7Uxa16jlbYAsgch",
+      "snapshot": {
+        "type": "table_cell",
+        "parent_id": "ICNqdHskloiCL3xsZlGlxTsqgSb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "AqFwdU6xdofhHMx1VUxlhQLagnf"
+        ]
+      }
+    },
+    "AqFwdU6xdofhHMx1VUxlhQLagnf": {
+      "id": "AqFwdU6xdofhHMx1VUxlhQLagnf",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "NdZ9dSoaPowN7Uxa16jlbYAsgch",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+p"
+            },
+            "text": {
+              "0": "极简模型，以单品/拼团 ID 为核心，弱化购物车。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "McCodE5M4o18rExZShNlSs1hgtb": {
+      "id": "McCodE5M4o18rExZShNlSs1hgtb",
+      "snapshot": {
+        "type": "table_cell",
+        "parent_id": "ICNqdHskloiCL3xsZlGlxTsqgSb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "FRi9dI6DQocNqRxzIpnl8uxygHd"
+        ]
+      }
+    },
+    "FRi9dI6DQocNqRxzIpnl8uxygHd": {
+      "id": "FRi9dI6DQocNqRxzIpnl8uxygHd",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "McCodE5M4o18rExZShNlSs1hgtb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 2,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+3*0*1+6*0+f"
+            },
+            "text": {
+              "0": "强依赖直播间上下文，订单需绑定主播/房间 ID。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "QyysdpaIvo5gp5xxARwlDihygPh": {
+      "id": "QyysdpaIvo5gp5xxARwlDihygPh",
+      "snapshot": {
+        "type": "table_cell",
+        "parent_id": "ICNqdHskloiCL3xsZlGlxTsqgSb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "MrwEdfuNBogPLSxIbEVlsXOjgRg"
+        ]
+      }
+    },
+    "MrwEdfuNBogPLSxIbEVlsXOjgRg": {
+      "id": "MrwEdfuNBogPLSxIbEVlsXOjgRg",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "QyysdpaIvo5gp5xxARwlDihygPh",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 2,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+j*0+l"
+            },
+            "text": {
+              "0": "直播上下文（短期单一渠道） + 母子单：适配多供应商拆单，且必须记录直播间归因。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "VcI8dsojZopWAsx0HBrlT0JEgkf": {
+      "id": "VcI8dsojZopWAsx0HBrlT0JEgkf",
+      "snapshot": {
+        "type": "table_cell",
+        "parent_id": "ICNqdHskloiCL3xsZlGlxTsqgSb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "HGxSdgyWhoQ6BoxZn2alGrkEgZb"
+        ]
+      }
+    },
+    "HGxSdgyWhoQ6BoxZn2alGrkEgZb": {
+      "id": "HGxSdgyWhoQ6BoxZn2alGrkEgZb",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "VcI8dsojZopWAsx0HBrlT0JEgkf",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 2,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+4"
+            },
+            "text": {
+              "0": "交易快照"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "IqUmdyGpFoWbcXxs9wQliE4bgIJ": {
+      "id": "IqUmdyGpFoWbcXxs9wQliE4bgIJ",
+      "snapshot": {
+        "type": "table_cell",
+        "parent_id": "ICNqdHskloiCL3xsZlGlxTsqgSb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "UXqodorPoo6tTyx1Cdhld39Wg0f"
+        ]
+      }
+    },
+    "UXqodorPoo6tTyx1Cdhld39Wg0f": {
+      "id": "UXqodorPoo6tTyx1Cdhld39Wg0f",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "IqUmdyGpFoWbcXxs9wQliE4bgIJ",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+i"
+            },
+            "text": {
+              "0": "记录下单时商品、价格、活动所有属性。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "XwpCdsqRJoO84bxwrFLl9ofmgOe": {
+      "id": "XwpCdsqRJoO84bxwrFLl9ofmgOe",
+      "snapshot": {
+        "type": "table_cell",
+        "parent_id": "ICNqdHskloiCL3xsZlGlxTsqgSb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "I35Ydqai3oKtbQxHJlHl5GxYgzf"
+        ]
+      }
+    },
+    "I35Ydqai3oKtbQxHJlHl5GxYgzf": {
+      "id": "I35Ydqai3oKtbQxHJlHl5GxYgzf",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "XwpCdsqRJoO84bxwrFLl9ofmgOe",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+f"
+            },
+            "text": {
+              "0": "极致压缩，侧重价格与团购状态。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "DxFXdIuqYoPKyZxgLIClWKBggyd": {
+      "id": "DxFXdIuqYoPKyZxgLIClWKBggyd",
+      "snapshot": {
+        "type": "table_cell",
+        "parent_id": "ICNqdHskloiCL3xsZlGlxTsqgSb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "JkZFdMHH4ot0hexsF7SlIqF2gOd"
+        ]
+      }
+    },
+    "JkZFdMHH4ot0hexsF7SlIqF2gOd": {
+      "id": "JkZFdMHH4ot0hexsF7SlIqF2gOd",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "DxFXdIuqYoPKyZxgLIClWKBggyd",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+e"
+            },
+            "text": {
+              "0": "包含直播瞬间的特定促销信息。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "EJFrdF7buolFotxdRnflVqp6gxh": {
+      "id": "EJFrdF7buolFotxdRnflVqp6gxh",
+      "snapshot": {
+        "type": "table_cell",
+        "parent_id": "ICNqdHskloiCL3xsZlGlxTsqgSb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "SCtDdg2hGo4OmpxjT0yliHudgtb"
+        ]
+      }
+    },
+    "SCtDdg2hGo4OmpxjT0yliHudgtb": {
+      "id": "SCtDdg2hGo4OmpxjT0yliHudgtb",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "EJFrdF7buolFotxdRnflVqp6gxh",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 2,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+b*0+o"
+            },
+            "text": {
+              "0": "全量 JSONB 快照：存储于独立快照库，支持沙特税务审计及售后比对。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "VfCedFUQ5oCNxVxLtTvlLLMEg3b": {
+      "id": "VfCedFUQ5oCNxVxLtTvlLLMEg3b",
+      "snapshot": {
+        "type": "table_cell",
+        "parent_id": "ICNqdHskloiCL3xsZlGlxTsqgSb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "KvkDdSfzpo2QFXxNGghlZ8Ahgrb"
+        ]
+      }
+    },
+    "KvkDdSfzpo2QFXxNGghlZ8Ahgrb": {
+      "id": "KvkDdSfzpo2QFXxNGghlZ8Ahgrb",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "VfCedFUQ5oCNxVxLtTvlLLMEg3b",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 2,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+4"
+            },
+            "text": {
+              "0": "价格逻辑"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "MLNtd0RrIoZQBIx4OTGl8T1EgCh": {
+      "id": "MLNtd0RrIoZQBIx4OTGl8T1EgCh",
+      "snapshot": {
+        "type": "table_cell",
+        "parent_id": "ICNqdHskloiCL3xsZlGlxTsqgSb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "RA6LdBTdgodFyXxL2zmlwCJjg3b"
+        ]
+      }
+    },
+    "RA6LdBTdgodFyXxL2zmlwCJjg3b": {
+      "id": "RA6LdBTdgodFyXxL2zmlwCJjg3b",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "MLNtd0RrIoZQBIx4OTGl8T1EgCh",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 2,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+3*0*1+4*0+7"
+            },
+            "text": {
+              "0": "复杂的平摊算法（层层满减）。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "LkaBdNeHvoXSZ3xBg6Mly9Uzg0c": {
+      "id": "LkaBdNeHvoXSZ3xBg6Mly9Uzg0c",
+      "snapshot": {
+        "type": "table_cell",
+        "parent_id": "ICNqdHskloiCL3xsZlGlxTsqgSb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "FoUedQoLEoWCM3xdbHylncY9gAd"
+        ]
+      }
+    },
+    "FoUedQoLEoWCM3xdbHylncY9gAd": {
+      "id": "FoUedQoLEoWCM3xdbHylncY9gAd",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "LkaBdNeHvoXSZ3xBg6Mly9Uzg0c",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+9"
+            },
+            "text": {
+              "0": "简单直接的团购价。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "O41ZdaX74odVPWx4onblU1kHgPf": {
+      "id": "O41ZdaX74odVPWx4onblU1kHgPf",
+      "snapshot": {
+        "type": "table_cell",
+        "parent_id": "ICNqdHskloiCL3xsZlGlxTsqgSb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "DZ7hdx4tzoWdI8x91nFll3nkg3e"
+        ]
+      }
+    },
+    "DZ7hdx4tzoWdI8x91nFll3nkg3e": {
+      "id": "DZ7hdx4tzoWdI8x91nFll3nkg3e",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "O41ZdaX74odVPWx4onblU1kHgPf",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 2,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+4*0+a"
+            },
+            "text": {
+              "0": "动态价格，随直播间节奏变化。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "SAvBdFkDeosKTexAMEMlAc4RgLd": {
+      "id": "SAvBdFkDeosKTexAMEMlAc4RgLd",
+      "snapshot": {
+        "type": "table_cell",
+        "parent_id": "ICNqdHskloiCL3xsZlGlxTsqgSb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "RhAIdpllhonM0LxUSAVlgCfMgae"
+        ]
+      }
+    },
+    "RhAIdpllhonM0LxUSAVlgCfMgae": {
+      "id": "RhAIdpllhonM0LxUSAVlgCfMgae",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "SAvBdFkDeosKTexAMEMlAc4RgLd",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 2,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+5*0+9"
+            },
+            "text": {
+              "0": "固定价格：以商品中心定价为准"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "BOs6d6CXloGFljxEmR8lhAEdgpg": {
+      "id": "BOs6d6CXloGFljxEmR8lhAEdgpg",
+      "snapshot": {
+        "type": "table_cell",
+        "parent_id": "ICNqdHskloiCL3xsZlGlxTsqgSb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "SR7Dd6oA8o6fzqxwl81lrQtbgub"
+        ]
+      }
+    },
+    "SR7Dd6oA8o6fzqxwl81lrQtbgub": {
+      "id": "SR7Dd6oA8o6fzqxwl81lrQtbgub",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "BOs6d6CXloGFljxEmR8lhAEdgpg",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 2,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+4"
+            },
+            "text": {
+              "0": "库存控制"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "Q9RKdDTcroHJ2Hx0ti7lqQcZg7K": {
+      "id": "Q9RKdDTcroHJ2Hx0ti7lqQcZg7K",
+      "snapshot": {
+        "type": "table_cell",
+        "parent_id": "ICNqdHskloiCL3xsZlGlxTsqgSb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "G7Vxd0xSdoYRN4xA1fDlfAASgmc"
+        ]
+      }
+    },
+    "G7Vxd0xSdoYRN4xA1fDlfAASgmc": {
+      "id": "G7Vxd0xSdoYRN4xA1fDlfAASgmc",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "Q9RKdDTcroHJ2Hx0ti7lqQcZg7K",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+k"
+            },
+            "text": {
+              "0": "预占库存（15-30 分钟），支付扣减。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "WrOAdbq7IoYhfCx4LPFltHlVggd": {
+      "id": "WrOAdbq7IoYhfCx4LPFltHlVggd",
+      "snapshot": {
+        "type": "table_cell",
+        "parent_id": "ICNqdHskloiCL3xsZlGlxTsqgSb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "ExVddbH2IoXNKbxT1vvlU0iugpb"
+        ]
+      }
+    },
+    "ExVddbH2IoXNKbxT1vvlU0iugpb": {
+      "id": "ExVddbH2IoXNKbxT1vvlU0iugpb",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "WrOAdbq7IoYhfCx4LPFltHlVggd",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+b"
+            },
+            "text": {
+              "0": "支付即扣减，极短占位。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "VMKIdmLZIon6YhxTxqGlZ3cKghJ": {
+      "id": "VMKIdmLZIon6YhxTxqGlZ3cKghJ",
+      "snapshot": {
+        "type": "table_cell",
+        "parent_id": "ICNqdHskloiCL3xsZlGlxTsqgSb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "Cgoxda6yxo81d4xbUQwlibHZgWZ"
+        ]
+      }
+    },
+    "Cgoxda6yxo81d4xbUQwlibHZgWZ": {
+      "id": "Cgoxda6yxo81d4xbUQwlibHZgWZ",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "VMKIdmLZIon6YhxTxqGlZ3cKghJ",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 2,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+6*0+3"
+            },
+            "text": {
+              "0": "高并发脉冲式预占。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "SgS5dIJB3oX4lwxe1lblYcHAgKL": {
+      "id": "SgS5dIJB3oX4lwxe1lblYcHAgKL",
+      "snapshot": {
+        "type": "table_cell",
+        "parent_id": "ICNqdHskloiCL3xsZlGlxTsqgSb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "ESHzdVyCNo5eBcxhcZul51AWgtd"
+        ]
+      }
+    },
+    "ESHzdVyCNo5eBcxhcZul51AWgtd": {
+      "id": "ESHzdVyCNo5eBcxhcZul51AWgtd",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "SgS5dIJB3oX4lwxe1lblYcHAgKL",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 2,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+o*0+1e"
+            },
+            "text": {
+              "0": "虚拟库存 + Redis 预占 + 延迟队列释放：应对直播间瞬间流量。虚拟库存指的是：即使是工厂一件代发模式，仍然在商品中心设定库存上限，防止超卖。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "XuNBdV1IgoEEjQxMR4ZliCoigx3": {
+      "id": "XuNBdV1IgoEEjQxMR4ZliCoigx3",
+      "snapshot": {
+        "type": "table_cell",
+        "parent_id": "ICNqdHskloiCL3xsZlGlxTsqgSb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "W9PTdsSMhoOpJMxwwFFln4fEgVg"
+        ]
+      }
+    },
+    "W9PTdsSMhoOpJMxwwFFln4fEgVg": {
+      "id": "W9PTdsSMhoOpJMxwwFFln4fEgVg",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "XuNBdV1IgoEEjQxMR4ZliCoigx3",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 2,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+4"
+            },
+            "text": {
+              "0": "逆向流程"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "VDzedkOIRoGHp2xvjoQlWwqhgTc": {
+      "id": "VDzedkOIRoGHp2xvjoQlWwqhgTc",
+      "snapshot": {
+        "type": "table_cell",
+        "parent_id": "ICNqdHskloiCL3xsZlGlxTsqgSb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "HjfkdcNvdoPYpLxR4NLlT6xTg6f"
+        ]
+      }
+    },
+    "HjfkdcNvdoPYpLxR4NLlT6xTg6f": {
+      "id": "HjfkdcNvdoPYpLxR4NLlT6xTg6f",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "VDzedkOIRoGHp2xvjoQlWwqhgTc",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+9"
+            },
+            "text": {
+              "0": "完善的退换货体系。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "NJgVdzgxyoUibix1VsIlnyMAgIf": {
+      "id": "NJgVdzgxyoUibix1VsIlnyMAgIf",
+      "snapshot": {
+        "type": "table_cell",
+        "parent_id": "ICNqdHskloiCL3xsZlGlxTsqgSb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "B218d2LXHoR3yjxJnAQlchYAgPg"
+        ]
+      }
+    },
+    "B218d2LXHoR3yjxJnAQlchYAgPg": {
+      "id": "B218d2LXHoR3yjxJnAQlchYAgPg",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "NJgVdzgxyoUibix1VsIlnyMAgIf",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+e"
+            },
+            "text": {
+              "0": "极简“仅退款”，依赖信用分。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "HPwCdbReeojl9rxQsEzlczlogPY": {
+      "id": "HPwCdbReeojl9rxQsEzlczlogPY",
+      "snapshot": {
+        "type": "table_cell",
+        "parent_id": "ICNqdHskloiCL3xsZlGlxTsqgSb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "QkZ7dCpXoo3EaRxAv81l3U0sglb"
+        ]
+      }
+    },
+    "QkZ7dCpXoo3EaRxAv81l3U0sglb": {
+      "id": "QkZ7dCpXoo3EaRxAv81l3U0sglb",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "HPwCdbReeojl9rxQsEzlczlogPY",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+i"
+            },
+            "text": {
+              "0": "极高的退货率（冲动消费），流程复杂。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "TdSNdWGzWoWLdQxL5OIlKvSggKh": {
+      "id": "TdSNdWGzWoWLdQxL5OIlKvSggKh",
+      "snapshot": {
+        "type": "table_cell",
+        "parent_id": "ICNqdHskloiCL3xsZlGlxTsqgSb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "P6nbdLLKYoaADTxnTM4lf5g6gMc"
+        ]
+      }
+    },
+    "P6nbdLLKYoaADTxnTM4lf5g6gMc": {
+      "id": "P6nbdLLKYoaADTxnTM4lf5g6gMc",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "TdSNdWGzWoWLdQxL5OIlKvSggKh",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 2,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+6*0+1i"
+            },
+            "text": {
+              "0": "拒收逻辑优先：专门针对沙特 COD 高拒收率设计“拦截”链路。即使是由店铺运营独立受理售后问题，仍然将状态体现在订单上。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "NYzvdHxM3oPn0TxQFJul3RAbgBd": {
+      "id": "NYzvdHxM3oPn0TxQFJul3RAbgBd",
+      "snapshot": {
+        "type": "heading2",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+h"
+            },
+            "text": {
+              "0": "订单实体的逻辑架构 (1:N:M)"
+            }
+          }
+        },
+        "align": "",
+        "folded": false,
+        "seq": "auto",
+        "seq_level": "auto"
+      }
+    },
+    "LFc2dYFb5oZdYgxuaNel3uRBgqf": {
+      "id": "LFc2dYFb5oZdYgxuaNel3uRBgqf",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+q"
+            },
+            "text": {
+              "0": "商品订单、支付订单、物流订单不是简单的 1:1 关系"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "Z6ACdkuL0oTA2ex2PeTl7tzUgPd": {
+      "id": "Z6ACdkuL0oTA2ex2PeTl7tzUgPd",
+      "snapshot": {
+        "type": "heading3",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+6"
+            },
+            "text": {
+              "0": "逻辑映射关系"
+            }
+          }
+        },
+        "align": "",
+        "folded": false,
+        "seq": "auto",
+        "seq_level": "auto"
+      }
+    },
+    "BsSWd4JbCo6aoox7mbDlubLLgad": {
+      "id": "BsSWd4JbCo6aoox7mbDlubLLgad",
+      "snapshot": {
+        "type": "ordered",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 2,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+5*0+t"
+            },
+            "text": {
+              "0": "交易主单 ：用户在结算页点击“提交”产生的容器，对应一个订单页单号。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false,
+        "seq": "1"
+      }
+    },
+    "DhJwdrarboUs1Sx57RPl2QJKgbw": {
+      "id": "DhJwdrarboUs1Sx57RPl2QJKgbw",
+      "snapshot": {
+        "type": "ordered",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 2,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+3*0+3*0*1+a*0+e"
+            },
+            "text": {
+              "0": "子单 ：按 供应商/店铺/发货仓 拆分。这是履约的最小单位。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false,
+        "seq": "auto"
+      }
+    },
+    "VceedGlZxoVLFIxr1VIlNl6PgTd": {
+      "id": "VceedGlZxoVLFIxr1VIlNl6PgTd",
+      "snapshot": {
+        "type": "ordered",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "MZ6wdT6VQoq9XIxw72wli7Gigoc",
+          "DUbWdh95fonTgixgMLvlXJS1g6e"
+        ],
+        "text": {
+          "apool": {
+            "nextNum": 2,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+3*0+1"
+            },
+            "text": {
+              "0": "支付单："
+            }
+          }
+        },
+        "align": "",
+        "folded": false,
+        "seq": "auto"
+      }
+    },
+    "MZ6wdT6VQoq9XIxw72wli7Gigoc": {
+      "id": "MZ6wdT6VQoq9XIxw72wli7Gigoc",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "VceedGlZxoVLFIxr1VIlNl6PgTd",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+1a"
+            },
+            "text": {
+              "0": "1 个交易主单可能对应多个支付单（如：首笔支付失败后重试，或 COD 订单的预付金+尾款）。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false,
+        "seq": "auto"
+      }
+    },
+    "DUbWdh95fonTgixgMLvlXJS1g6e": {
+      "id": "DUbWdh95fonTgixgMLvlXJS1g6e",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "VceedGlZxoVLFIxr1VIlNl6PgTd",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 2,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+3*0+k"
+            },
+            "text": {
+              "0": "风险点：必须防止“一单多付”或“金额不一致”。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false,
+        "seq": "auto"
+      }
+    },
+    "NwR1dZVQYo4CoHx9DVilRMtXgiU": {
+      "id": "NwR1dZVQYo4CoHx9DVilRMtXgiU",
+      "snapshot": {
+        "type": "ordered",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "NnjNdxXZ0o5pVfxtgtRlJP7Jgfb"
+        ],
+        "text": {
+          "apool": {
+            "nextNum": 2,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+3*0+1"
+            },
+            "text": {
+              "0": "物流单："
+            }
+          }
+        },
+        "align": "",
+        "folded": false,
+        "seq": "auto"
+      }
+    },
+    "NnjNdxXZ0o5pVfxtgtRlJP7Jgfb": {
+      "id": "NnjNdxXZ0o5pVfxtgtRlJP7Jgfb",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "NwR1dZVQYo4CoHx9DVilRMtXgiU",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+u"
+            },
+            "text": {
+              "0": "1 个子单可能对应多个物流单（如：大件超重拆包、分批到货）。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false,
+        "seq": "auto"
+      }
+    },
+    "IR3Xd8mX7oeCO9xRkuPlfaZggSb": {
+      "id": "IR3Xd8mX7oeCO9xRkuPlfaZggSb",
+      "snapshot": {
+        "type": "ordered",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "GiAEdoVHYoGVeBxKX7zlcCnVgKh"
+        ],
+        "text": {
+          "apool": {
+            "nextNum": 2,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+4"
+            },
+            "text": {
+              "0": "佣金单："
+            }
+          }
+        },
+        "align": "",
+        "folded": false,
+        "seq": "auto"
+      }
+    },
+    "GiAEdoVHYoGVeBxKX7zlcCnVgKh": {
+      "id": "GiAEdoVHYoGVeBxKX7zlcCnVgKh",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "IR3Xd8mX7oeCO9xRkuPlfaZggSb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+e"
+            },
+            "text": {
+              "0": "是否有这个概念？用于佣金结算"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "IPthdMZI2o07PjxQOHJlm7FigTd": {
+      "id": "IPthdMZI2o07PjxQOHJlm7FigTd",
+      "snapshot": {
+        "type": "ordered",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+z"
+            },
+            "text": {
+              "0": "平台佣金单？是否存在这个概念？把所有佣金结算之后，剩余才是给商家的钱。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false,
+        "seq": "auto"
+      }
+    },
+    "FOhzdsr4xorIk2xnvzilrhkRgAZ": {
+      "id": "FOhzdsr4xorIk2xnvzilrhkRgAZ",
+      "snapshot": {
+        "type": "ordered",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 2,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+5*0+13"
+            },
+            "text": {
+              "0": "购物车下单：需要考虑支持后续多店铺/多仓库时，选择多件不同商品可能会自动拆交易主单的逻辑"
+            }
+          }
+        },
+        "align": "",
+        "folded": false,
+        "seq": "auto"
+      }
+    },
+    "JvcudgodtoMmfpxJ2q8ltYvcgDX": {
+      "id": "JvcudgodtoMmfpxJ2q8ltYvcgDX",
+      "snapshot": {
+        "type": "heading3",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+5"
+            },
+            "text": {
+              "0": "实体关联图"
+            }
+          }
+        },
+        "align": "",
+        "folded": false,
+        "seq": "auto",
+        "seq_level": "auto"
+      }
+    },
+    "HN6RdTdTKoiXbbx35ndlHZxkgKe": {
+      "id": "HN6RdTdTKoiXbbx35ndlHZxkgKe",
+      "snapshot": {
+        "type": "isv",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "app_block_id": "",
+        "block_type_id": "blk_631fefbbae02400430b8f9f4",
+        "manifest": {
+          "app_id": "",
+          "app_name": "",
+          "app_version": "0.0.117",
+          "view_type": "block_h5"
+        },
+        "data": {
+          "data": "erDiagram\n    交易主单 ||--|{ 交易子单 : \"拆单\"\n    交易主单 ||--o{ 支付订单 : \"支付请求\"\n    交易子单 ||--o{ 物流订单 : \"包裹发运\"\n    物流订单 ||--|| 物流 : \"快递单号\"\n    交易子单 ||--o{ 逆向订单 : \"逆向申请\"",
+          "theme": "default",
+          "view": "chart"
+        },
+        "interaction_data_token": "Qwg1deIYjvf3yKbpCKzlk5TDgrd",
+        "size": {
+          "width": 0,
+          "height": 280
+        },
+        "comment_details": {}
+      }
+    },
+    "OCsWdLv4Ho5GCnxt4B6l2xJ7gKf": {
+      "id": "OCsWdLv4Ho5GCnxt4B6l2xJ7gKf",
+      "snapshot": {
+        "type": "heading2",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+e"
+            },
+            "text": {
+              "0": "数据归因设计：多场景流量追踪"
+            }
+          }
+        },
+        "align": "",
+        "folded": false,
+        "seq": "auto",
+        "seq_level": "auto"
+      }
+    },
+    "QxspdueOjoYah4xLLsila1sHg9b": {
+      "id": "QxspdueOjoYah4xLLsila1sHg9b",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+j"
+            },
+            "text": {
+              "0": "OMS 在下单必须冻结“归因上下文”。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "QDvxdTUkvobkUhx9HMWlaiBFgZc": {
+      "id": "QDvxdTUkvobkUhx9HMWlaiBFgZc",
+      "snapshot": {
+        "type": "heading3",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+j"
+            },
+            "text": {
+              "0": "归因模型：末次点击 vs. 跨会话追踪"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "JydAdvhrxo67E6xsFE9lDH35gkc": {
+      "id": "JydAdvhrxo67E6xsFE9lDH35gkc",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 2,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+6*0+x"
+            },
+            "text": {
+              "0": "直接下单归因：用户在直播间 A 点击商品并下单，订单直接绑定 lid、uid。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "JTlqda60qoAlPox4QsglQyrEgoc": {
+      "id": "JTlqda60qoAlPox4QsglQyrEgoc",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "LjrKdA9w8o9KkcxtafAlTZSJgyc",
+          "YHIwd6f30ofzG2xcgeBlO95Zgpf"
+        ],
+        "text": {
+          "apool": {
+            "nextNum": 2,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+b*0+1"
+            },
+            "text": {
+              "0": "购物车归因（逻辑难点）："
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "LjrKdA9w8o9KkcxtafAlTZSJgyc": {
+      "id": "LjrKdA9w8o9KkcxtafAlTZSJgyc",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "JTlqda60qoAlPox4QsglQyrEgoc",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 2,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+2*0+14"
+            },
+            "text": {
+              "0": "场景：在直播间 A 加购，在直播间 B 又点了一次该商品，最后在个人中心购物车支付。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "YHIwd6f30ofzG2xcgeBlO95Zgpf": {
+      "id": "YHIwd6f30ofzG2xcgeBlO95Zgpf",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "JTlqda60qoAlPox4QsglQyrEgoc",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 3,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ],
+              "2": [
+                "inlineCode",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+2*0+3*0*1+7*0+7*0*2+b*0+15"
+            },
+            "text": {
+              "0": "策略：采用带效期覆盖策略。加购时记录 Source_Type（Live/Shop/Search）。在支付确认前，以最后一次点击的营销链接为准。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "KpEydwwBgoWPA6xb7bqlUsDRgOf": {
+      "id": "KpEydwwBgoWPA6xb7bqlUsDRgOf",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 3,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ],
+              "2": [
+                "inlineCode",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+6*0+d*0*2+7*0+7"
+            },
+            "text": {
+              "0": "店铺下单归因：若无直播间参数，回落至 Shop_ID 基础归因。 "
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "BlvXd19Dlo2xazxxFwDlWEX7glb": {
+      "id": "BlvXd19Dlo2xazxxFwDlWEX7glb",
+      "snapshot": {
+        "type": "heading2",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+n"
+            },
+            "text": {
+              "0": "订单全生命周期状态机 (Mermaid 格式)"
+            }
+          }
+        },
+        "align": "",
+        "folded": false,
+        "seq": "auto",
+        "seq_level": "auto"
+      }
+    },
+    "Gyt1dQCW3o2YphxHMZYlL6wqgXe": {
+      "id": "Gyt1dQCW3o2YphxHMZYlL6wqgXe",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+b"
+            },
+            "text": {
+              "0": "支付状态、物流状态解耦"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "Ea72dAbUdoVo5uxX5LCl9VKagZf": {
+      "id": "Ea72dAbUdoVo5uxX5LCl9VKagZf",
+      "snapshot": {
+        "type": "isv",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "app_block_id": "",
+        "block_type_id": "blk_631fefbbae02400430b8f9f4",
+        "manifest": {
+          "app_id": "",
+          "app_name": "",
+          "app_version": "0.0.117",
+          "view_type": "block_h5"
+        },
+        "data": {
+          "data": "graph&nbsp;TD\n&nbsp;&nbsp;&nbsp;&nbsp;A[待付款/待确认]&nbsp;-->|在线支付成功|&nbsp;B[待发货/待采购]\n&nbsp;&nbsp;&nbsp;&nbsp;A&nbsp;-->|COD&nbsp;下单确认|&nbsp;B\n&nbsp;&nbsp;&nbsp;&nbsp;B&nbsp;-->|系统自动拆单/路由|&nbsp;C[待店铺/供应商履约]\n&nbsp;&nbsp;&nbsp;&nbsp;C&nbsp;-->|API&nbsp;抓单/打单|&nbsp;D[已出库/清关中]\n&nbsp;&nbsp;&nbsp;&nbsp;D&nbsp;-->|空运/干线运输|&nbsp;E[末端派送中]\n&nbsp;&nbsp;&nbsp;&nbsp;E&nbsp;-->|签收成功|&nbsp;F[已完成]\n&nbsp;&nbsp;&nbsp;&nbsp;E&nbsp;-->|拒收/派送失败|&nbsp;G[异常处理/退回中]\n&nbsp;&nbsp;&nbsp;&nbsp;\n&nbsp;&nbsp;&nbsp;&nbsp;%%&nbsp;逆向链路\n&nbsp;&nbsp;&nbsp;&nbsp;B&nbsp;-->|用户取消|&nbsp;H[已关闭]\n&nbsp;&nbsp;&nbsp;&nbsp;F&nbsp;-->|发起售后|&nbsp;I[售后流程中]\n&nbsp;&nbsp;&nbsp;&nbsp;I&nbsp;-->|仅退款/退货退款|&nbsp;J[已退款]\n&nbsp;&nbsp;&nbsp;&nbsp;\n&nbsp;&nbsp;&nbsp;&nbsp;%%&nbsp;特殊触发\n&nbsp;&nbsp;&nbsp;&nbsp;G&nbsp;-->|COD&nbsp;拒收处理|&nbsp;J\n&nbsp;&nbsp;&nbsp;&nbsp;G&nbsp;-->|二次派送成功|&nbsp;F",
+          "theme": "default",
+          "view": "chart"
+        },
+        "interaction_data_token": "XqJQdOYukv4rTWbiXuIlAIfyg4e",
+        "size": {
+          "width": 0,
+          "height": 280
+        },
+        "comment_details": {}
+      }
+    },
+    "WYrwdfZJPonutexLerelhOmSg4e": {
+      "id": "WYrwdfZJPonutexLerelhOmSg4e",
+      "snapshot": {
+        "type": "heading1",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+i"
+            },
+            "text": {
+              "0": "Jaco OMS 架构设计与交互逻辑"
+            }
+          }
+        },
+        "align": "",
+        "folded": false,
+        "seq": "auto",
+        "seq_level": "auto"
+      }
+    },
+    "LvYsdZ2bRoLmr4xWesWluNLtgNe": {
+      "id": "LvYsdZ2bRoLmr4xWesWluNLtgNe",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+p"
+            },
+            "text": {
+              "0": "OMS 处于“核心业务域”，是承上启下的编排中心。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "AFRcdOsYwomm26xp31DlCEfEgvf": {
+      "id": "AFRcdOsYwomm26xp31DlCEfEgvf",
+      "snapshot": {
+        "type": "heading2",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+9"
+            },
+            "text": {
+              "0": "架构位置与交互模式"
+            }
+          }
+        },
+        "align": "",
+        "folded": false,
+        "seq": "auto",
+        "seq_level": "auto"
+      }
+    },
+    "KdO7dXl0ooDlDpxqMLDlXuEHgNm": {
+      "id": "KdO7dXl0ooDlDpxqMLDlXuEHgNm",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 2,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+8*0+g"
+            },
+            "text": {
+              "0": "向上对接 BFF：处理下单、查单 RPC 请求。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "Hk29dqUIGoYO3XxELNKlVD32ggb": {
+      "id": "Hk29dqUIGoYO3XxELNKlVD32ggb",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 3,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ],
+              "2": [
+                "link",
+                "https%3A%2F%2Falphagroup.sg.larkenterprise.com%2Fdocx%2FLD1fdkZOooYPyTxlxIvl7StXgeg"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+8*0+4*0*2+a*0+9"
+            },
+            "text": {
+              "0": "侧向调用 PIM：验证 SKU/SPU 状态 与执行库存预占。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "F5xbdY1BsofKqnx0YGclik9Pgad": {
+      "id": "F5xbdY1BsofKqnx0YGclik9Pgad",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 2,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+g*0+i"
+            },
+            "text": {
+              "0": "向下驱动 Pay/Finance：发起收单或处理 COD 状态同步。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "FTR4dRH7yo3iOgxXRYwliKgAgwh": {
+      "id": "FTR4dRH7yo3iOgxXRYwliKgAgwh",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 3,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ],
+              "2": [
+                "link",
+                "https%3A%2F%2Falphagroup.larkenterprise.com%2Fwiki%2FLLXLwpqWIivnqLkfyVicdjpznyb"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+f*0+4*0*2+9*0+b"
+            },
+            "text": {
+              "0": "外连 Supplier/TMS：通过 API 推送采购单 并同步跨境物流轨迹。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "CJEzdTdfpo9rYKxpyRclhxqtg69": {
+      "id": "CJEzdTdfpo9rYKxpyRclhxqtg69",
+      "snapshot": {
+        "type": "isv",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "app_block_id": "",
+        "block_type_id": "blk_631fefbbae02400430b8f9f4",
+        "manifest": {
+          "app_id": "",
+          "app_name": "",
+          "app_version": "0.0.117",
+          "view_type": "block_h5"
+        },
+        "data": {
+          "data": "graph TD\n%% 样式定义\n    classDef bff fill:#e1f5fe,stroke:#03a9f4,stroke-width:2px;\n    classDef oms fill:#fff3e0,stroke:#ff9800,stroke-width:3px;\n    classDef domain fill:#f3e5f5,stroke:#9c27b0,stroke-width:2px;\n    classDef finance fill:#fff9c4,stroke:#fbc02d,stroke-width:2px;\n    classDef fulfillment fill:#e8f5e9,stroke:#4caf50,stroke-width:2px;\n\n    subgraph Traffic_Layer[\"接入层\"]\n        BFF[\"电商中台 (BFF)<br/>(业务路由、聚合、适配)\"]:::bff\n    end\n\n    subgraph Core_Domain[\"核心业务域\"]\n        OMS[\"OMS 订单编排中心<br/>(状态机、拆单路由、交易快照)\"]:::oms\n\n        STORE[\"Store 店铺中心-可扩展能力<br/>(店铺资质、分润协议、品牌管理)\"]:::domain\n        PIM[\"PIM 商品中心<br/>(SKU管理、SABER合规、动态定价)\"]:::domain\n    end\n\n    subgraph Finance_Domain[\"支付与财务结算域\"]\n        PAY[\"Payment 支付中心<br/>(收单、退款、多币种转换)\"]:::finance\n        FIN[\"Finance 财务中心<br/>(Escrow担保交易、T+N结算、主播分润支出)\"]:::finance\n    end\n\n    subgraph Supply_Chain[\"供应链与履约域\"]\n        SUP[\"Supplier 供应商管理<br/>(API对接、采购成本、供应商KPI)\"]:::fulfillment\n        TMS[\"Logistics 物流中心 (3PL)<br/>(物流翻译、跨境轨迹、SABER推单)\"]:::fulfillment\n    end\n\n%% 核心交互链路\n    BFF -->|\"1. 下单 RPC\"| OMS\n%% OMS 编排动作\n    OMS -.->|\"2. 验证主体与协议\"| STORE\n    OMS -.->|\"3. 冻结/预占库存\"| PIM\n    OMS ===>|\"4. 发起收单请求\"| PAY\n\n%% 支付成功后的履约链\n    PAY --\"支付成功事件 (MQ)\"--> OMS\n    OMS ===>|\"5. 生成采购/履约单\"| SUP\nSUP -->|\"6. 指配发货任务\"| TMS\n\n%% 状态闭环\nTMS --\"物流状态更新\"--> OMS\nOMS --\"妥投/终态信号\"--> FIN\nFIN -->|\"7. 解冻资金并执行分润结算\"| STORE\nFIN -->|\"8. 结算货款\"| SUP",
+          "theme": "default",
+          "view": "chart"
+        },
+        "interaction_data_token": "LYRCd8dSBvABxnbXYUklJsNLg4d",
+        "size": {
+          "width": 0,
+          "height": 280
+        },
+        "comment_details": {}
+      }
+    },
+    "E86Pdm2cHoz2yDxTF8hlJ0JngZe": {
+      "id": "E86Pdm2cHoz2yDxTF8hlJ0JngZe",
+      "snapshot": {
+        "type": "heading2",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+h"
+            },
+            "text": {
+              "0": "数据库设计思路 (数据库分库分表)"
+            }
+          }
+        },
+        "align": "",
+        "folded": false,
+        "seq": "auto",
+        "seq_level": "auto"
+      }
+    },
+    "TBihdqt26ozvCyxp687lkxQVgUe": {
+      "id": "TBihdqt26ozvCyxp687lkxQVgUe",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+r"
+            },
+            "text": {
+              "0": "为了应对直播场景的峰值，OMS 必须采用分库分表设计："
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "FjFydFgaDoGHTKxDkW3laSo6gth": {
+      "id": "FjFydFgaDoGHTKxDkW3laSo6gth",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "Gmz8dmcOlorEf1x3gVZlmBB7gZb"
+        ],
+        "text": {
+          "apool": {
+            "nextNum": 3,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ],
+              "2": [
+                "inlineCode",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+i*0+4*0*2+8*0+1"
+            },
+            "text": {
+              "0": "分片键 (Sharding Key)：采用 Buyer_ID。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "Gmz8dmcOlorEf1x3gVZlmBB7gZb": {
+      "id": "Gmz8dmcOlorEf1x3gVZlmBB7gZb",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "FjFydFgaDoGHTKxDkW3laSo6gth",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 3,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "italic",
+                "true"
+              ],
+              "2": [
+                "bold",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+2*0+w*0*2+i*0+8"
+            },
+            "text": {
+              "0": "理由：消费者查询订单频率远高于供应商。为了支持供应商维度查询，利用 ES (Elasticsearch) 进行异构索引。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "QmaUd91M5o1pqmx4mW4luQe2gYX": {
+      "id": "QmaUd91M5o1pqmx4mW4luQe2gYX",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 2,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+4*0+z"
+            },
+            "text": {
+              "0": "冷热分离：3 个月内的订单处于热库，3 个月后迁移至 Hbase 或冷归档库。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "AXqHdGRhnoRUrnxl3oolwgiIgpf": {
+      "id": "AXqHdGRhnoRUrnxl3oolwgiIgpf",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 3,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "bold",
+                "true"
+              ],
+              "2": [
+                "inlineCode",
+                "true"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0*1+4*0+1*0*2+e*0+1x"
+            },
+            "text": {
+              "0": "快照存储：order_snapshot 表建议使用 NoSQL 或独立存储，避免主库体积过大。必要情况下，商品信息可以采取多版本控制，订单与特定版本商品信息关联，价格信息同理。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "Z2z7dPgyWoJKtBxyyUclR134gQg": {
+      "id": "Z2z7dPgyWoJKtBxyyUclR134gQg",
+      "snapshot": {
+        "type": "heading1",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+b"
+            },
+            "text": {
+              "0": "讨论点/待确认/风险点"
+            }
+          }
+        },
+        "align": "",
+        "folded": false,
+        "seq": "auto",
+        "seq_level": "auto"
+      }
+    },
+    "UUybdtZivotVYNxuACql6iv2gXc": {
+      "id": "UUybdtZivotVYNxuACql6iv2gXc",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "NctHdmD3SoJAMfxM7Ycl3tPWgwb",
+          "Cx8ldmDDFon9vVxfFFQl5YzngiD",
+          "Uew8d7JK8otoBmxgym5lpjW5gOe",
+          "CGqXdjJVIoiZ4GxgiwQlycF7gLd"
+        ],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+a"
+            },
+            "text": {
+              "0": "“影子 SKU”冲突"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "NctHdmD3SoJAMfxM7Ycl3tPWgwb": {
+      "id": "NctHdmD3SoJAMfxM7Ycl3tPWgwb",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "UUybdtZivotVYNxuACql6iv2gXc",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+v"
+            },
+            "text": {
+              "0": "如果商家在用户“下单后”但在“发货前”，修改了 SKU 的属性"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "Cx8ldmDDFon9vVxfFFQl5YzngiD": {
+      "id": "Cx8ldmDDFon9vVxfFFQl5YzngiD",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "UUybdtZivotVYNxuACql6iv2gXc",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "OtDsd2AGRo7I5YxCVX7lI6VBgOg"
+        ],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+a"
+            },
+            "text": {
+              "0": "瞬时改价下的支付冲突"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "OtDsd2AGRo7I5YxCVX7lI6VBgOg": {
+      "id": "OtDsd2AGRo7I5YxCVX7lI6VBgOg",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "Cx8ldmDDFon9vVxfFFQl5YzngiD",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+7"
+            },
+            "text": {
+              "0": "以哪个价格为准"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "Uew8d7JK8otoBmxgym5lpjW5gOe": {
+      "id": "Uew8d7JK8otoBmxgym5lpjW5gOe",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "UUybdtZivotVYNxuACql6iv2gXc",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "GTzid8ULUocnP9xWBtUlDIrXgXb"
+        ],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+b"
+            },
+            "text": {
+              "0": "下架与在途订单的冲突："
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "GTzid8ULUocnP9xWBtUlDIrXgXb": {
+      "id": "GTzid8ULUocnP9xWBtUlDIrXgXb",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "Uew8d7JK8otoBmxgym5lpjW5gOe",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+1e"
+            },
+            "text": {
+              "0": "当商品因为风控或合规原因被“强制下架”时，已经下单但处于“待支付”或“支付处理中”的订单该如何流转？"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "CGqXdjJVIoiZ4GxgiwQlycF7gLd": {
+      "id": "CGqXdjJVIoiZ4GxgiwQlycF7gLd",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "UUybdtZivotVYNxuACql6iv2gXc",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "BgtldVhmoo6wnSx6wpYltjHsgyh"
+        ],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+c"
+            },
+            "text": {
+              "0": "“下架即熔断”的执行力度"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "BgtldVhmoo6wnSx6wpYltjHsgyh": {
+      "id": "BgtldVhmoo6wnSx6wpYltjHsgyh",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "CGqXdjJVIoiZ4GxgiwQlycF7gLd",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+20"
+            },
+            "text": {
+              "0": "是“禁止新单生成”，还是“强制关停在途订单”？如果用户已经进入支付页面但未点击“确定”，此时商品下架，支付回调后 OMS 是否应该自动触发退款？"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "Ui3OdoMgfoBBHFx0sWBlf3tTged": {
+      "id": "Ui3OdoMgfoBBHFx0sWBlf3tTged",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "UBHodxG86oMEr4xqNXbl306EgRQ"
+        ],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+b"
+            },
+            "text": {
+              "0": "佣金结算的“延迟满足”"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "UBHodxG86oMEr4xqNXbl306EgRQ": {
+      "id": "UBHodxG86oMEr4xqNXbl306EgRQ",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "Ui3OdoMgfoBBHFx0sWBlf3tTged",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+1h"
+            },
+            "text": {
+              "0": "主播的佣金是下单就计入，还是等确认收货（且过 15 天无理由退货期）后再发放？结算池概念、资金预留期概念。"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "TalVd8m1XocoIjx7DGXl4KMbgGf": {
+      "id": "TalVd8m1XocoIjx7DGXl4KMbgGf",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "NWypdYuKKoc0tmxKTyjlWh2qgre"
+        ],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+g"
+            },
+            "text": {
+              "0": "球 GMV 统计的“口径污染” "
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "NWypdYuKKoc0tmxKTyjlWh2qgre": {
+      "id": "NWypdYuKKoc0tmxKTyjlWh2qgre",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "TalVd8m1XocoIjx7DGXl4KMbgGf",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+w"
+            },
+            "text": {
+              "0": "由于取消单、退款单、换货单的存在，实时 GMV 统计往往是虚高的"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "McStdz5xvohCcJxbQr7lA3Mkgdc": {
+      "id": "McStdz5xvohCcJxbQr7lA3Mkgdc",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "Jo0FdcxLRoGJWUx9V4qlTtlrgfh"
+        ],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+4"
+            },
+            "text": {
+              "0": "库存预占"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "Jo0FdcxLRoGJWUx9V4qlTtlrgfh": {
+      "id": "Jo0FdcxLRoGJWUx9V4qlTtlrgfh",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "McStdz5xvohCcJxbQr7lA3Mkgdc",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+c"
+            },
+            "text": {
+              "0": "下单即扣库存还是支付之后"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "BAeFd8e1xovnPAxbrCvlaEjKgWq": {
+      "id": "BAeFd8e1xovnPAxbrCvlaEjKgWq",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "BLx8ddm8uo38OSxJNoQlhDdGgmd"
+        ],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+a"
+            },
+            "text": {
+              "0": "针对购物车多商品结算"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "BLx8ddm8uo38OSxJNoQlhDdGgmd": {
+      "id": "BLx8ddm8uo38OSxJNoQlhDdGgmd",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "BAeFd8e1xovnPAxbrCvlaEjKgWq",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+30"
+            },
+            "text": {
+              "0": "结算环节，部分商品价格、库存可能已发生变化。是报错让用户重新结算，还是直接自动更新价格？自动更新后用户看到总价变化可能投诉；不更新则商家亏损。解决方案需要在用户体验和平台风险之间权衡。（引入价格有效期/版本号机制？）"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "GmoydxZdGoY6GkxLmbzl6mePgxh": {
+      "id": "GmoydxZdGoY6GkxLmbzl6mePgxh",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "FBgedcuQVo8raDxE8HilttYsgOF",
+          "DO3ndXnHIoAUp2x4h4il7QN7gtb"
+        ],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+5"
+            },
+            "text": {
+              "0": "评价系统？"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "FBgedcuQVo8raDxE8HilttYsgOF": {
+      "id": "FBgedcuQVo8raDxE8HilttYsgOF",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "GmoydxZdGoY6GkxLmbzl6mePgxh",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+9"
+            },
+            "text": {
+              "0": "什么时候允许评价？"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "DO3ndXnHIoAUp2x4h4il7QN7gtb": {
+      "id": "DO3ndXnHIoAUp2x4h4il7QN7gtb",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "GmoydxZdGoY6GkxLmbzl6mePgxh",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+g"
+            },
+            "text": {
+              "0": "有售后（退款退货）的评价如何处理"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "LVS5dkteUogkaQxQazDlVxdPgmQ": {
+      "id": "LVS5dkteUogkaQxQazDlVxdPgmQ",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "JC53dqxsRo2UxCx3wPtlSy9Qg2d",
+          "Z6iVd79uKoNYeaxOm1sl1htMgSf",
+          "LhFjdc5tjoiRByxvEeIlgmAXg8e"
+        ],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+8"
+            },
+            "text": {
+              "0": "售后单标记、审核"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "JC53dqxsRo2UxCx3wPtlSy9Qg2d": {
+      "id": "JC53dqxsRo2UxCx3wPtlSy9Qg2d",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "LVS5dkteUogkaQxQazDlVxdPgmQ",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+n"
+            },
+            "text": {
+              "0": "分摊误差补偿：多商品订单逻辑下的部分售后单处理"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "Z6iVd79uKoNYeaxOm1sl1htMgSf": {
+      "id": "Z6iVd79uKoNYeaxOm1sl1htMgSf",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "LVS5dkteUogkaQxQazDlVxdPgmQ",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+6"
+            },
+            "text": {
+              "0": "历史商品引用"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "LhFjdc5tjoiRByxvEeIlgmAXg8e": {
+      "id": "LhFjdc5tjoiRByxvEeIlgmAXg8e",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "LVS5dkteUogkaQxQazDlVxdPgmQ",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+7"
+            },
+            "text": {
+              "0": "售后有效期概念"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "S8b3dZRBXozDL9xFj9SlbSgigFe": {
+      "id": "S8b3dZRBXozDL9xFj9SlbSgigFe",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "YxNvdWLUWoKkZAxJDrnlbhpogGh"
+        ],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+4"
+            },
+            "text": {
+              "0": "物流相关"
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "YxNvdWLUWoKkZAxJDrnlbhpogGh": {
+      "id": "YxNvdWLUWoKkZAxJDrnlbhpogGh",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "S8b3dZRBXozDL9xFj9SlbSgigFe",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "initialAttributedTexts": {
+            "text": {
+              "0": "具体选择哪个/些物流提供商？ "
+            },
+            "attribs": {
+              "0": "*0+e*1*2*3+1"
+            }
+          },
+          "apool": {
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ],
+              "1": [
+                "author",
+                "6904599315294044163"
+              ],
+              "2": [
+                "inline-component",
+                "{\"id\":\"642080fd-07d4-4fb0-8271-bf999a5c0f94\",\"type\":\"mention_doc\",\"data\":{\"file_type\":22,\"icon_type\":22,\"token\":\"NbLJdtE6eod4tvxDFPDlbZyIgpe\",\"tenant_id\":\"6794770587811086337\",\"raw_url\":\"https://alphagroup.sg.larkenterprise.com/docx/NbLJdtE6eod4tvxDFPDlbZyIgpe\",\"title\":\"第三方物流追踪服务商-调研报告\"}}"
+              ],
+              "3": [
+                "link-id",
+                "e25cbfc2-f480-45c6-96fd-7be62e884f07"
+              ]
+            },
+            "nextNum": 4
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "HMv1djV3wodcU9xlq5ilnDf0gFu": {
+      "id": "HMv1djV3wodcU9xlq5ilnDf0gFu",
+      "snapshot": {
+        "type": "bullet",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "6904599315294044163",
+        "children": [],
+        "text": {
+          "initialAttributedTexts": {
+            "text": {
+              "0": "归因具体设计模式？ "
+            },
+            "attribs": {
+              "0": "*0+9*0*1*2+1"
+            }
+          },
+          "apool": {
+            "numToAttrib": {
+              "0": [
+                "author",
+                "6904599315294044163"
+              ],
+              "1": [
+                "inline-component",
+                "{\"id\":\"bab13ccb-b643-4054-b393-0492d25b32d6\",\"type\":\"mention_doc\",\"data\":{\"file_type\":16,\"icon_type\":22,\"token\":\"GoQuw0N2UizPFVk8MnKc2UYMnjc\",\"tenant_id\":\"6794770587811086337\",\"raw_url\":\"https://alphagroup.larkenterprise.com/wiki/GoQuw0N2UizPFVk8MnKc2UYMnjc?fromScene=spaceOverview\",\"title\":\"直播电商归因-调研报告\"}}"
+              ],
+              "2": [
+                "link-id",
+                "7d0534f9-f493-4bca-92c4-eddc866c20ea"
+              ]
+            },
+            "nextNum": 3
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "AziXdFHy0ogo9axND1ZlcAS5gih": {
+      "id": "AziXdFHy0ogo9axND1ZlcAS5gih",
+      "snapshot": {
+        "type": "text",
+        "parent_id": "V7PhdByagoe92gxSMbslfcgQgTb",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [],
+        "text": {
+          "apool": {
+            "nextNum": 0,
+            "numToAttrib": {}
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": ""
+            },
+            "text": {
+              "0": ""
+            }
+          }
+        },
+        "align": "",
+        "folded": false
+      }
+    },
+    "V7PhdByagoe92gxSMbslfcgQgTb": {
+      "id": "V7PhdByagoe92gxSMbslfcgQgTb",
+      "snapshot": {
+        "type": "page",
+        "parent_id": "",
+        "comments": [],
+        "revisions": [],
+        "locked": false,
+        "hidden": false,
+        "author": "7434548424273444866",
+        "children": [
+          "UtWMdEyjjoWhY4xNXQAledQxgOe",
+          "P9kld1D4Vo5Pi1xAvJzlSGfogIb",
+          "JvCZdCIDQoqpDfxtSxGlak7Rgch",
+          "VKnHdOsHVopU63x5arElusc2gRd",
+          "OFJCdK0Rko83Z1xRhBJl1ga8g8f",
+          "K06sdxV83onotrxfnqWlNxaZgce",
+          "ICNqdHskloiCL3xsZlGlxTsqgSb",
+          "NYzvdHxM3oPn0TxQFJul3RAbgBd",
+          "LFc2dYFb5oZdYgxuaNel3uRBgqf",
+          "Z6ACdkuL0oTA2ex2PeTl7tzUgPd",
+          "BsSWd4JbCo6aoox7mbDlubLLgad",
+          "DhJwdrarboUs1Sx57RPl2QJKgbw",
+          "VceedGlZxoVLFIxr1VIlNl6PgTd",
+          "NwR1dZVQYo4CoHx9DVilRMtXgiU",
+          "IR3Xd8mX7oeCO9xRkuPlfaZggSb",
+          "IPthdMZI2o07PjxQOHJlm7FigTd",
+          "FOhzdsr4xorIk2xnvzilrhkRgAZ",
+          "JvcudgodtoMmfpxJ2q8ltYvcgDX",
+          "HN6RdTdTKoiXbbx35ndlHZxkgKe",
+          "OCsWdLv4Ho5GCnxt4B6l2xJ7gKf",
+          "QxspdueOjoYah4xLLsila1sHg9b",
+          "QDvxdTUkvobkUhx9HMWlaiBFgZc",
+          "JydAdvhrxo67E6xsFE9lDH35gkc",
+          "JTlqda60qoAlPox4QsglQyrEgoc",
+          "KpEydwwBgoWPA6xb7bqlUsDRgOf",
+          "BlvXd19Dlo2xazxxFwDlWEX7glb",
+          "Gyt1dQCW3o2YphxHMZYlL6wqgXe",
+          "Ea72dAbUdoVo5uxX5LCl9VKagZf",
+          "WYrwdfZJPonutexLerelhOmSg4e",
+          "LvYsdZ2bRoLmr4xWesWluNLtgNe",
+          "AFRcdOsYwomm26xp31DlCEfEgvf",
+          "KdO7dXl0ooDlDpxqMLDlXuEHgNm",
+          "Hk29dqUIGoYO3XxELNKlVD32ggb",
+          "F5xbdY1BsofKqnx0YGclik9Pgad",
+          "FTR4dRH7yo3iOgxXRYwliKgAgwh",
+          "CJEzdTdfpo9rYKxpyRclhxqtg69",
+          "E86Pdm2cHoz2yDxTF8hlJ0JngZe",
+          "TBihdqt26ozvCyxp687lkxQVgUe",
+          "FjFydFgaDoGHTKxDkW3laSo6gth",
+          "QmaUd91M5o1pqmx4mW4luQe2gYX",
+          "AXqHdGRhnoRUrnxl3oolwgiIgpf",
+          "Z2z7dPgyWoJKtBxyyUclR134gQg",
+          "UUybdtZivotVYNxuACql6iv2gXc",
+          "Ui3OdoMgfoBBHFx0sWBlf3tTged",
+          "TalVd8m1XocoIjx7DGXl4KMbgGf",
+          "McStdz5xvohCcJxbQr7lA3Mkgdc",
+          "BAeFd8e1xovnPAxbrCvlaEjKgWq",
+          "GmoydxZdGoY6GkxLmbzl6mePgxh",
+          "LVS5dkteUogkaQxQazDlVxdPgmQ",
+          "S8b3dZRBXozDL9xFj9SlbSgigFe",
+          "HMv1djV3wodcU9xlq5ilnDf0gFu",
+          "AziXdFHy0ogo9axND1ZlcAS5gih"
+        ],
+        "text": {
+          "apool": {
+            "nextNum": 1,
+            "numToAttrib": {
+              "0": [
+                "author",
+                "7434548424273444866"
+              ]
+            }
+          },
+          "initialAttributedTexts": {
+            "attribs": {
+              "0": "*0+g"
+            },
+            "text": {
+              "0": "Jaco电商-订单中心-调研报告"
+            }
+          }
+        },
+        "align": "",
+        "doc_info": {
+          "editors": [
+            "7434548424273444866",
+            "6904599315294044163"
+          ],
+          "options": [
+            "editors",
+            "edit_time"
+          ],
+          "deleted_editors": [],
+          "option_modified": null
+        }
+      }
+    }
+  },
+  "payloadMap": {
+    "P9kld1D4Vo5Pi1xAvJzlSGfogIb": {
+      "level": 1
+    },
+    "JvCZdCIDQoqpDfxtSxGlak7Rgch": {
+      "level": 1
+    },
+    "JvlydKovpoz5Y3xPk9kloAE7gBb": {
+      "level": 2
+    },
+    "Uhwid4fPdojEXpxTSollO0iYgoe": {
+      "level": 2
+    },
+    "K06sdxV83onotrxfnqWlNxaZgce": {
+      "level": 1
+    },
+    "NTmxdBtR1o6lNyxZJCQldEDKgxr": {
+      "level": 1
+    },
+    "HSlad0dndobLeBxCRK2lboqHgMg": {
+      "level": 1
+    },
+    "KXxBdxGc4o9fFkxTTTTl6G6egRz": {
+      "level": 1
+    },
+    "D4TndVz5govyrVxXvHZlDvMxgbg": {
+      "level": 1
+    },
+    "XcaHd2oL2oEvfgx1czHldbKNghc": {
+      "level": 1
+    },
+    "CkvadG5bqoKpkDxtVFqlK9GJgqh": {
+      "level": 1
+    },
+    "UWEfdYDrRoV6fLxLq6blkXBLgde": {
+      "level": 1
+    },
+    "AqFwdU6xdofhHMx1VUxlhQLagnf": {
+      "level": 1
+    },
+    "FRi9dI6DQocNqRxzIpnl8uxygHd": {
+      "level": 1
+    },
+    "MrwEdfuNBogPLSxIbEVlsXOjgRg": {
+      "level": 1
+    },
+    "HGxSdgyWhoQ6BoxZn2alGrkEgZb": {
+      "level": 1
+    },
+    "UXqodorPoo6tTyx1Cdhld39Wg0f": {
+      "level": 1
+    },
+    "I35Ydqai3oKtbQxHJlHl5GxYgzf": {
+      "level": 1
+    },
+    "JkZFdMHH4ot0hexsF7SlIqF2gOd": {
+      "level": 1
+    },
+    "SCtDdg2hGo4OmpxjT0yliHudgtb": {
+      "level": 1
+    },
+    "KvkDdSfzpo2QFXxNGghlZ8Ahgrb": {
+      "level": 1
+    },
+    "RA6LdBTdgodFyXxL2zmlwCJjg3b": {
+      "level": 1
+    },
+    "FoUedQoLEoWCM3xdbHylncY9gAd": {
+      "level": 1
+    },
+    "DZ7hdx4tzoWdI8x91nFll3nkg3e": {
+      "level": 1
+    },
+    "RhAIdpllhonM0LxUSAVlgCfMgae": {
+      "level": 1
+    },
+    "SR7Dd6oA8o6fzqxwl81lrQtbgub": {
+      "level": 1
+    },
+    "G7Vxd0xSdoYRN4xA1fDlfAASgmc": {
+      "level": 1
+    },
+    "ExVddbH2IoXNKbxT1vvlU0iugpb": {
+      "level": 1
+    },
+    "Cgoxda6yxo81d4xbUQwlibHZgWZ": {
+      "level": 1
+    },
+    "ESHzdVyCNo5eBcxhcZul51AWgtd": {
+      "level": 1
+    },
+    "W9PTdsSMhoOpJMxwwFFln4fEgVg": {
+      "level": 1
+    },
+    "HjfkdcNvdoPYpLxR4NLlT6xTg6f": {
+      "level": 1
+    },
+    "B218d2LXHoR3yjxJnAQlchYAgPg": {
+      "level": 1
+    },
+    "QkZ7dCpXoo3EaRxAv81l3U0sglb": {
+      "level": 1
+    },
+    "P6nbdLLKYoaADTxnTM4lf5g6gMc": {
+      "level": 1
+    },
+    "LFc2dYFb5oZdYgxuaNel3uRBgqf": {
+      "level": 1
+    },
+    "HN6RdTdTKoiXbbx35ndlHZxkgKe": {},
+    "QxspdueOjoYah4xLLsila1sHg9b": {
+      "level": 1
+    },
+    "Gyt1dQCW3o2YphxHMZYlL6wqgXe": {
+      "level": 1
+    },
+    "Ea72dAbUdoVo5uxX5LCl9VKagZf": {},
+    "LvYsdZ2bRoLmr4xWesWluNLtgNe": {
+      "level": 1
+    },
+    "CJEzdTdfpo9rYKxpyRclhxqtg69": {},
+    "TBihdqt26ozvCyxp687lkxQVgUe": {
+      "level": 1
+    },
+    "AziXdFHy0ogo9axND1ZlcAS5gih": {
+      "level": 1
+    }
+  },
+  "extra": {
+    "channel": "saas",
+    "pasteRandomId": "9b87024c-fbd3-42b0-921a-fb03e202c92b",
+    "mention_page_title": {
+      "SD3idWQmfooBJSxelGQlD60Ng9g": "JACO电商架构设计调研-汇总",
+      "NbLJdtE6eod4tvxDFPDlbZyIgpe": "第三方物流追踪服务商-调研报告"
+    },
+    "external_mention_url": {
+      "SD3idWQmfooBJSxelGQlD60Ng9g": "https://alphagroup.sg.larkenterprise.com/docx/SD3idWQmfooBJSxelGQlD60Ng9g",
+      "NbLJdtE6eod4tvxDFPDlbZyIgpe": "https://alphagroup.sg.larkenterprise.com/docx/NbLJdtE6eod4tvxDFPDlbZyIgpe"
+    },
+    "isEqualBlockSelection": true
+  },
+  "isKeepQuoteContainer": false,
+  "selection": [
+    {
+      "id": 2,
+      "type": "block",
+      "recordId": "UtWMdEyjjoWhY4xNXQAledQxgOe"
+    },
+    {
+      "id": 3,
+      "type": "block",
+      "recordId": "P9kld1D4Vo5Pi1xAvJzlSGfogIb"
+    },
+    {
+      "id": 4,
+      "type": "block",
+      "recordId": "JvCZdCIDQoqpDfxtSxGlak7Rgch"
+    },
+    {
+      "id": 10,
+      "type": "block",
+      "recordId": "VKnHdOsHVopU63x5arElusc2gRd"
+    },
+    {
+      "id": 11,
+      "type": "block",
+      "recordId": "OFJCdK0Rko83Z1xRhBJl1ga8g8f"
+    },
+    {
+      "id": 12,
+      "type": "block",
+      "recordId": "K06sdxV83onotrxfnqWlNxaZgce"
+    },
+    {
+      "id": 13,
+      "type": "block",
+      "recordId": "ICNqdHskloiCL3xsZlGlxTsqgSb"
+    },
+    {
+      "id": 44,
+      "type": "block",
+      "recordId": "NYzvdHxM3oPn0TxQFJul3RAbgBd"
+    },
+    {
+      "id": 45,
+      "type": "block",
+      "recordId": "LFc2dYFb5oZdYgxuaNel3uRBgqf"
+    },
+    {
+      "id": 46,
+      "type": "block",
+      "recordId": "Z6ACdkuL0oTA2ex2PeTl7tzUgPd"
+    },
+    {
+      "id": 47,
+      "type": "block",
+      "recordId": "BsSWd4JbCo6aoox7mbDlubLLgad"
+    },
+    {
+      "id": 48,
+      "type": "block",
+      "recordId": "DhJwdrarboUs1Sx57RPl2QJKgbw"
+    },
+    {
+      "id": 49,
+      "type": "block",
+      "recordId": "VceedGlZxoVLFIxr1VIlNl6PgTd"
+    },
+    {
+      "id": 52,
+      "type": "block",
+      "recordId": "NwR1dZVQYo4CoHx9DVilRMtXgiU"
+    },
+    {
+      "id": 54,
+      "type": "block",
+      "recordId": "IR3Xd8mX7oeCO9xRkuPlfaZggSb"
+    },
+    {
+      "id": 56,
+      "type": "block",
+      "recordId": "IPthdMZI2o07PjxQOHJlm7FigTd"
+    },
+    {
+      "id": 57,
+      "type": "block",
+      "recordId": "FOhzdsr4xorIk2xnvzilrhkRgAZ"
+    },
+    {
+      "id": 58,
+      "type": "block",
+      "recordId": "JvcudgodtoMmfpxJ2q8ltYvcgDX"
+    },
+    {
+      "id": 59,
+      "type": "block",
+      "recordId": "HN6RdTdTKoiXbbx35ndlHZxkgKe"
+    },
+    {
+      "id": 60,
+      "type": "block",
+      "recordId": "OCsWdLv4Ho5GCnxt4B6l2xJ7gKf"
+    },
+    {
+      "id": 61,
+      "type": "block",
+      "recordId": "QxspdueOjoYah4xLLsila1sHg9b"
+    },
+    {
+      "id": 62,
+      "type": "block",
+      "recordId": "QDvxdTUkvobkUhx9HMWlaiBFgZc"
+    },
+    {
+      "id": 63,
+      "type": "block",
+      "recordId": "JydAdvhrxo67E6xsFE9lDH35gkc"
+    },
+    {
+      "id": 64,
+      "type": "block",
+      "recordId": "JTlqda60qoAlPox4QsglQyrEgoc"
+    },
+    {
+      "id": 67,
+      "type": "block",
+      "recordId": "KpEydwwBgoWPA6xb7bqlUsDRgOf"
+    },
+    {
+      "id": 68,
+      "type": "block",
+      "recordId": "BlvXd19Dlo2xazxxFwDlWEX7glb"
+    },
+    {
+      "id": 69,
+      "type": "block",
+      "recordId": "Gyt1dQCW3o2YphxHMZYlL6wqgXe"
+    },
+    {
+      "id": 70,
+      "type": "block",
+      "recordId": "Ea72dAbUdoVo5uxX5LCl9VKagZf"
+    },
+    {
+      "id": 71,
+      "type": "block",
+      "recordId": "WYrwdfZJPonutexLerelhOmSg4e"
+    },
+    {
+      "id": 72,
+      "type": "block",
+      "recordId": "LvYsdZ2bRoLmr4xWesWluNLtgNe"
+    },
+    {
+      "id": 73,
+      "type": "block",
+      "recordId": "AFRcdOsYwomm26xp31DlCEfEgvf"
+    },
+    {
+      "id": 74,
+      "type": "block",
+      "recordId": "KdO7dXl0ooDlDpxqMLDlXuEHgNm"
+    },
+    {
+      "id": 75,
+      "type": "block",
+      "recordId": "Hk29dqUIGoYO3XxELNKlVD32ggb"
+    },
+    {
+      "id": 76,
+      "type": "block",
+      "recordId": "F5xbdY1BsofKqnx0YGclik9Pgad"
+    },
+    {
+      "id": 77,
+      "type": "block",
+      "recordId": "FTR4dRH7yo3iOgxXRYwliKgAgwh"
+    },
+    {
+      "id": 78,
+      "type": "block",
+      "recordId": "CJEzdTdfpo9rYKxpyRclhxqtg69"
+    },
+    {
+      "id": 79,
+      "type": "block",
+      "recordId": "E86Pdm2cHoz2yDxTF8hlJ0JngZe"
+    },
+    {
+      "id": 80,
+      "type": "block",
+      "recordId": "TBihdqt26ozvCyxp687lkxQVgUe"
+    },
+    {
+      "id": 81,
+      "type": "block",
+      "recordId": "FjFydFgaDoGHTKxDkW3laSo6gth"
+    },
+    {
+      "id": 83,
+      "type": "block",
+      "recordId": "QmaUd91M5o1pqmx4mW4luQe2gYX"
+    },
+    {
+      "id": 84,
+      "type": "block",
+      "recordId": "AXqHdGRhnoRUrnxl3oolwgiIgpf"
+    },
+    {
+      "id": 85,
+      "type": "block",
+      "recordId": "Z2z7dPgyWoJKtBxyyUclR134gQg"
+    },
+    {
+      "id": 86,
+      "type": "block",
+      "recordId": "UUybdtZivotVYNxuACql6iv2gXc"
+    },
+    {
+      "id": 87,
+      "type": "block",
+      "recordId": "Ui3OdoMgfoBBHFx0sWBlf3tTged"
+    },
+    {
+      "id": 88,
+      "type": "block",
+      "recordId": "TalVd8m1XocoIjx7DGXl4KMbgGf"
+    },
+    {
+      "id": 89,
+      "type": "block",
+      "recordId": "McStdz5xvohCcJxbQr7lA3Mkgdc"
+    },
+    {
+      "id": 90,
+      "type": "block",
+      "recordId": "BAeFd8e1xovnPAxbrCvlaEjKgWq"
+    },
+    {
+      "id": 91,
+      "type": "block",
+      "recordId": "GmoydxZdGoY6GkxLmbzl6mePgxh"
+    },
+    {
+      "id": 92,
+      "type": "block",
+      "recordId": "LVS5dkteUogkaQxQazDlVxdPgmQ"
+    },
+    {
+      "id": 93,
+      "type": "block",
+      "recordId": "S8b3dZRBXozDL9xFj9SlbSgigFe"
+    },
+    {
+      "id": 94,
+      "type": "block",
+      "recordId": "HMv1djV3wodcU9xlq5ilnDf0gFu"
+    },
+    {
+      "id": 95,
+      "type": "block",
+      "recordId": "AziXdFHy0ogo9axND1ZlcAS5gih"
+    }
+  ],
+  "pasteFlag": "99390603-12a1-498d-9461-e19fceca87a2"
+}
