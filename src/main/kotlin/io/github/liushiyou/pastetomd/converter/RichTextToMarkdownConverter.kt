@@ -12,6 +12,12 @@ class RichTextToMarkdownConverter(
     val feishuParser: FeishuStructuredHtmlParser = FeishuStructuredHtmlParser(),
 ) {
 
+    private data class ListItemHeading(
+        val level: Int,
+        val text: String,
+        val element: Element,
+    )
+
     fun convertHtml(html: String): String {
         if (html.isBlank()) {
             return ""
@@ -81,6 +87,11 @@ class RichTextToMarkdownConverter(
             }
         }
 
+        Regex("""heading([1-6])""").find(blockType)?.groupValues?.get(1)?.toIntOrNull()?.let { level ->
+            val text = normalizeWhitespace(element.text()).trim()
+            return if (text.isBlank()) emptyList() else listOf("${"#".repeat(level)} $text")
+        }
+
         when (dataType) {
             "whiteboard" -> return emptyList()
             "divider" -> return listOf("---")
@@ -92,6 +103,12 @@ class RichTextToMarkdownConverter(
                     element.childNodes().flatMap { renderBlockNode(it, indentLevel) }
                 }
             }
+        }
+
+        if (element.attr("role").equals("heading", true)) {
+            val level = element.attr("aria-level").toIntOrNull()?.coerceIn(1, 6) ?: 1
+            val text = renderInlineChildren(element).replace("**", "").replace("*", "").trim()
+            return if (text.isBlank()) emptyList() else listOf("${"#".repeat(level)} $text")
         }
 
         return when (element.tagName().lowercase()) {
@@ -153,15 +170,22 @@ class RichTextToMarkdownConverter(
     private fun renderList(listElement: Element, ordered: Boolean, indentLevel: Int): List<String> {
         val result = mutableListOf<String>()
         val itemIndent = "   ".repeat(indentLevel)
+        val start = if (ordered) listElement.attr("start").toIntOrNull()?.coerceAtLeast(1) ?: 1 else 1
         val children = listElement.children().asSequence()
             .filter { it.tagName().equals("li", ignoreCase = true) }
             .toList()
 
         children.forEachIndexed { index, item ->
-            val prefix = if (ordered) "${index + 1}. " else "- "
-            val line = renderListItemLine(item)
-            if (line.isNotBlank()) {
-                result += itemIndent + prefix + line
+            val prefix = if (ordered) "${start + index}. " else "- "
+            val heading = renderListItemHeading(item)
+            if (heading != null) {
+                result += renderListItemWithHeading(item, heading, prefix, indentLevel)
+                return@forEachIndexed
+            } else {
+                val line = renderListItemLine(item)
+                if (line.isNotBlank()) {
+                    result += itemIndent + prefix + line
+                }
             }
 
             item.children().asSequence()
@@ -172,6 +196,48 @@ class RichTextToMarkdownConverter(
         }
 
         return if (result.isEmpty()) emptyList() else listOf(result.joinToString("\n"))
+    }
+
+    private fun renderListItemHeading(item: Element): ListItemHeading? {
+        val firstElement = item.children().firstOrNull { child ->
+            !child.tagName().equals("ul", true) && !child.tagName().equals("ol", true)
+        } ?: return null
+        if (!firstElement.tagName().matches(Regex("h[1-6]", RegexOption.IGNORE_CASE))) {
+            return null
+        }
+        val text = renderInlineChildren(firstElement).trim()
+        if (text.isBlank()) {
+            return null
+        }
+        val level = firstElement.tagName().lowercase().removePrefix("h").toIntOrNull() ?: return null
+        return ListItemHeading(level, text, firstElement)
+    }
+
+    private fun renderListItemWithHeading(
+        item: Element,
+        heading: ListItemHeading,
+        prefix: String,
+        indentLevel: Int,
+    ): List<String> {
+        val rendered = mutableListOf<String>()
+
+        item.children().forEach { child ->
+            when {
+                child === heading.element -> {
+                    rendered += "${"#".repeat(heading.level)} $prefix${heading.text}"
+                }
+
+                child.tagName().equals("ul", true) || child.tagName().equals("ol", true) -> {
+                    rendered += renderList(child, child.tagName().equals("ol", true), indentLevel + 1)
+                }
+
+                else -> {
+                    rendered += renderElement(child, indentLevel + 1)
+                }
+            }
+        }
+
+        return rendered
     }
 
     private fun renderFeishuListItem(element: Element, ordered: Boolean, indentLevel: Int): List<String> {
@@ -332,7 +398,7 @@ class RichTextToMarkdownConverter(
             cells.forEach { cell ->
                 fillRowspanSlots()
 
-                val text = normalizeWhitespace(renderInlineChildren(cell)).trim()
+                val text = renderTableCell(cell)
                 val colspan = cell.attr("colspan").toIntOrNull()?.coerceAtLeast(1) ?: 1
                 val rowspan = cell.attr("rowspan").toIntOrNull()?.coerceAtLeast(1) ?: 1
 
@@ -365,6 +431,108 @@ class RichTextToMarkdownConverter(
         }.filter { it.isNotEmpty() }
     }
 
+    private fun renderTableCell(cell: Element): String {
+        val rendered = cell.childNodes().joinToString("") { renderTableCellNode(it) }
+            .replace("\r\n", "\n")
+            .replace("\r", "\n")
+            .lines()
+            .map { it.trim() }
+            .filter { it.isNotEmpty() }
+            .joinToString("\n")
+            .trim()
+        return rendered.replace("\n", "<br/>")
+    }
+
+    private fun renderTableCellNode(node: Node): String {
+        return when (node) {
+            is TextNode -> escapeHtml(normalizeWhitespace(node.text()))
+            is Element -> when (node.tagName().lowercase()) {
+                "strong", "b" -> wrapHtml("strong", node.childNodes().joinToString("") { renderTableCellNode(it) })
+                "em", "i" -> wrapHtml("em", node.childNodes().joinToString("") { renderTableCellNode(it) })
+                "s", "strike", "del" -> wrapHtml("del", node.childNodes().joinToString("") { renderTableCellNode(it) })
+                "a" -> renderTableCellLink(node)
+                "code" -> {
+                    val text = normalizeWhitespace(node.text()).trim()
+                    if (text.isBlank()) "" else "<code>${escapeHtml(text)}</code>"
+                }
+                "img" -> renderTableCellImage(node)
+                "br" -> "\n"
+                "pre" -> renderTableCodeBlock(node)
+                "ul" -> renderTableList(node, ordered = false)
+                "ol" -> renderTableList(node, ordered = true)
+                "p", "div", "section", "article" -> {
+                    val inner = node.childNodes().joinToString("") { renderTableCellNode(it) }.trim()
+                    if (inner.isBlank()) "" else "$inner\n"
+                }
+                else -> {
+                    if (hasBlockLikeChildren(node)) {
+                        node.childNodes().joinToString("") { renderTableCellNode(it) } + "\n"
+                    } else {
+                        node.childNodes().joinToString("") { renderTableCellNode(it) }
+                    }
+                }
+            }
+            else -> ""
+        }
+    }
+
+    private fun renderTableList(list: Element, ordered: Boolean): String {
+        val items = list.children().asSequence()
+            .filter { it.tagName().equals("li", true) }
+            .mapIndexed { index, item ->
+                val marker = if (ordered) "${index + 1}. " else "- "
+                val content = item.childNodes().joinToString("") { renderTableCellNode(it) }.trim()
+                "$marker$content"
+            }
+            .filter { it.isNotBlank() }
+            .toList()
+        return if (items.isEmpty()) "" else items.joinToString("\n", postfix = "\n")
+    }
+
+    private fun renderTableCodeBlock(pre: Element): String {
+        val codeElement = pre.selectFirst("code")
+        val codeText = codeElement?.wholeText() ?: pre.wholeText()
+        val languageClass = codeElement?.classNames()?.firstOrNull { it.startsWith("language-") }
+        val language = languageClass?.removePrefix("language-")?.trim().orEmpty()
+        val classAttr = if (language.isBlank()) "" else " class=\"language-${escapeHtmlAttribute(language)}\""
+        val codeHtml = escapeHtml(codeText)
+            .replace("\r\n", "\n")
+            .replace("\r", "\n")
+            .replace("\n", "<br/>")
+        return "<pre><code$classAttr>$codeHtml</code></pre>"
+    }
+
+    private fun renderTableCellLink(link: Element): String {
+        val text = link.childNodes().joinToString("") { renderTableCellNode(it) }.ifBlank { escapeHtml(link.attr("href")) }
+        val href = link.attr("href").trim()
+        return if (href.isBlank()) text else "<a href=\"${escapeHtmlAttribute(href)}\">$text</a>"
+    }
+
+    private fun renderTableCellImage(image: Element): String {
+        val src = image.attr("src").trim()
+        if (src.isBlank()) {
+            return ""
+        }
+        val alt = escapeHtmlAttribute(image.attr("alt").trim())
+        val altAttr = if (alt.isBlank()) "" else " alt=\"$alt\""
+        return "<img src=\"${escapeHtmlAttribute(src)}\"$altAttr />"
+    }
+
+    private fun wrapHtml(tag: String, content: String): String {
+        return "<$tag>$content</$tag>"
+    }
+
+    private fun escapeHtml(text: String): String {
+        return text
+            .replace("&", "&amp;")
+            .replace("<", "&lt;")
+            .replace(">", "&gt;")
+    }
+
+    private fun escapeHtmlAttribute(text: String): String {
+        return escapeHtml(text).replace("\"", "&quot;")
+    }
+
     private fun renderInlineChildren(element: Element): String {
         return normalizeWhitespace(element.childNodes().joinToString("") { renderInlineNode(it) })
     }
@@ -377,6 +545,14 @@ class RichTextToMarkdownConverter(
                     "strong", "b" -> wrap("**", renderInlineChildren(node))
                     "em", "i" -> wrap("*", renderInlineChildren(node))
                     "s", "strike", "del" -> wrap("~~", renderInlineChildren(node))
+                    "span" -> {
+                        if (node.classNames().any { it.startsWith("inline-code") }) {
+                            val text = normalizeWhitespace(node.text()).trim()
+                            if (text.isBlank()) "" else "`$text`"
+                        } else {
+                            renderStyledSpan(node)
+                        }
+                    }
                     "a" -> {
                         val text = renderInlineChildren(node).trim()
                         val href = node.attr("href").trim()
@@ -388,7 +564,6 @@ class RichTextToMarkdownConverter(
                     }
                     "img" -> renderImage(node)
                     "br" -> "\n"
-                    "span" -> renderStyledSpan(node)
                     "button" -> renderInlineChildren(node)
                     else -> {
                         if (hasStyle(node, "font-weight", "700") || hasStyle(node, "font-weight", "bold")) {
@@ -441,6 +616,8 @@ class RichTextToMarkdownConverter(
             .replace("\uFEFF", "")
             .replace(Regex("[ \t]+"), " ")
             .replace(Regex(" *\n *"), "\n")
+            .replace(Regex("\\s+([，。！？；：、])"), "$1")
+            .replace(Regex("(?<=[\\p{IsHan}])\\s+(?=[\\p{IsHan}])"), "")
     }
 
     private fun cleanInlineContent(text: String): String {

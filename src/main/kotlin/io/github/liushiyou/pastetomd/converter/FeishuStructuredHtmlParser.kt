@@ -13,9 +13,20 @@ class FeishuStructuredHtmlParser(
         document: Document,
         renderElement: (Element, Int) -> List<String>,
     ): List<String>? {
-        val root = document.selectFirst("[data-lark-html-role=root]") ?: return null
+        val root = document.selectFirst("[data-lark-html-role=root]")
         val recordMap = parseRecordMap(document)
-        val children = root.children().toList()
+        val children = if (root != null) {
+            root.children().toList()
+        } else {
+            val bodyChildren = document.body().children().toList()
+            val hasFeishuMarkers = bodyChildren.any {
+                it.attr("data-block-type").isNotBlank() || it.attr("data-type").isNotBlank()
+            }
+            if (hasFeishuMarkers) bodyChildren else emptyList()
+        }
+        if (children.isEmpty()) {
+            return null
+        }
 
         return ParallelRenderSupport.mapOrdered(children) { child ->
                 when {

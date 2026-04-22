@@ -13,7 +13,6 @@
                 instance="io.github.liushiyou.pastetomd.settings.PasteToMarkdownConfigurable"
                 id="io.github.liushiyou.pastetomd.settings"
                 displayName="Paste to Markdown"/>
-        <copyPastePreProcessor implementation="io.github.liushiyou.pastetomd.paste.MarkdownPastePreProcessor"/>
     </extensions>
 
     <actions>
@@ -23,8 +22,10 @@
                 description="Paste clipboard text without converting rich text to Markdown"/>
         <action id="PasteToMarkdown.ReconvertClipboard"
                 class="io.github.liushiyou.pastetomd.actions.ReconvertClipboardAction"
-                text="Reconvert Clipboard to Markdown"
-                description="Convert the current clipboard content to Markdown and paste it into the editor"/>
+                text="Paste as Markdown"
+                description="Convert the current clipboard content to Markdown and paste it into the editor">
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl meta V"/>
+        </action>
         <action id="PasteToMarkdown.ShowClipboardSource"
                 class="io.github.liushiyou.pastetomd.actions.ShowClipboardSourceAction"
                 text="Show Clipboard Rich Text Source"

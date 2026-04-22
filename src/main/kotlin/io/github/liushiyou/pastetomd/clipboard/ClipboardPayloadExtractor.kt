@@ -1,6 +1,7 @@
 package io.github.liushiyou.pastetomd.clipboard
 
 import com.intellij.openapi.ide.CopyPasteManager
+import java.awt.Toolkit
 import java.awt.datatransfer.DataFlavor
 import java.awt.datatransfer.Transferable
 import java.io.InputStream
@@ -20,15 +21,21 @@ internal data class ClipboardDebugDump(
 
 internal class ClipboardPayloadExtractor(
     private val flavorDetector: ClipboardFlavorDetector = ClipboardFlavorDetector(),
+    private val systemClipboardProvider: () -> Transferable? = {
+        runCatching { Toolkit.getDefaultToolkit().systemClipboard.getContents(null) }.getOrNull()
+    },
+    private val copyPasteManagerProvider: () -> Transferable? = {
+        CopyPasteManager.getInstance().contents
+    },
 ) {
 
     fun readFromSystemClipboard(): ClipboardPayload? {
-        val transferable = CopyPasteManager.getInstance().contents ?: return null
+        val transferable = latestTransferable() ?: return null
         return extract(transferable)
     }
 
     fun dumpFromSystemClipboard(): ClipboardDebugDump? {
-        val transferable = CopyPasteManager.getInstance().contents ?: return null
+        val transferable = latestTransferable() ?: return null
         return ClipboardDebugDump(
             flavors = transferable.transferDataFlavors.map { flavor ->
                 buildString {
@@ -41,6 +48,10 @@ internal class ClipboardPayloadExtractor(
             },
             payload = extract(transferable),
         )
+    }
+
+    private fun latestTransferable(): Transferable? {
+        return systemClipboardProvider() ?: copyPasteManagerProvider()
     }
 
     fun extract(transferable: Transferable): ClipboardPayload {

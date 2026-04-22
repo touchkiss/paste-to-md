@@ -183,6 +183,50 @@ class RichTextToMarkdownConverterTest {
     }
 
     @Test
+    fun `preserves original order for nested list headings and following table blocks`() {
+        val html = """
+            <div data-lark-html-role="root">
+              <ol start="2">
+                <li data-list="number">
+                  <h1>商品体系全景调研</h1>
+                  <div>
+                    <ol start="1">
+                      <li data-list="number">
+                        <h2>&nbsp;&nbsp;商品模型</h2>
+                        <ol start="1">
+                          <li data-list="number">
+                            <h3>&nbsp;&nbsp;&nbsp;&nbsp;<strong>概念介绍</strong></h3>
+                          </li>
+                        </ol>
+                        <div>
+                          <table>
+                            <tr><th>左</th><th>右</th></tr>
+                            <tr><td>A</td><td>B</td></tr>
+                          </table>
+                        </div>
+                      </li>
+                    </ol>
+                  </div>
+                </li>
+              </ol>
+            </div>
+        """.trimIndent()
+
+        val markdown = converter.convertHtml(html)
+        val headingIndex = markdown.indexOf("### 1. **概念介绍**")
+        val tableIndex = markdown.indexOf("| 左 | 右 |")
+        val headingCount = markdown.windowed("### 1. **概念介绍**".length, 1, partialWindows = false)
+            .count { it == "### 1. **概念介绍**" }
+
+        assertTrue(headingIndex >= 0, "应当先渲染嵌套标题")
+        assertTrue(tableIndex >= 0, "应当渲染后续表格")
+        assertTrue(headingIndex < tableIndex, "嵌套标题必须保持在表格前面")
+        assertEquals(1, headingCount, "嵌套标题不应重复输出")
+        assertTrue(markdown.lines().any { it == "## 1. 商品模型" }, "所有标题都应顶格输出")
+        assertTrue(markdown.lines().any { it == "### 1. **概念介绍**" }, "嵌套标题前不应保留缩进空格")
+    }
+
+    @Test
     fun `converts feishu block types including quote code list and divider`() {
         val html = """
             <div class="block docx-text-block" data-block-type="text">
@@ -371,5 +415,190 @@ class RichTextToMarkdownConverterTest {
             """.trimIndent(),
             markdown
         )
+    }
+
+    @Test
+    fun `prioritizes heading when list item wraps heading element`() {
+        val html = """
+            <ol>
+              <li><h1>需求背景</h1></li>
+              <li><h2>商品体系全景调研</h2></li>
+            </ol>
+        """.trimIndent()
+
+        val markdown = converter.convertHtml(html)
+
+        assertEquals(
+            """
+            # 1. 需求背景
+            ## 2. 商品体系全景调研
+            """.trimIndent(),
+            markdown
+        )
+    }
+
+    @Test
+    fun `respects ordered list start attribute for heading list items`() {
+        val html = """
+            <ol start="3">
+              <li><h2>第三步</h2></li>
+              <li><h2>第四步</h2></li>
+            </ol>
+        """.trimIndent()
+
+        val markdown = converter.convertHtml(html)
+
+        assertEquals(
+            """
+            ## 3. 第三步
+            ## 4. 第四步
+            """.trimIndent(),
+            markdown
+        )
+    }
+
+    @Test
+    fun `keeps blank line before markdown table after heading list item`() {
+        val html = """
+            <ol>
+              <li><h1>需求背景</h1></li>
+            </ol>
+            <table>
+              <tr><th>姓名</th><th>分数</th></tr>
+              <tr><td>Alice</td><td>98</td></tr>
+            </table>
+        """.trimIndent()
+
+        val markdown = converter.convertHtml(html)
+
+        assertEquals(
+            """
+            # 1. 需求背景
+
+            | 姓名 | 分数 |
+            | --- | --- |
+            | Alice | 98 |
+            """.trimIndent(),
+            markdown
+        )
+    }
+
+    @Test
+    fun `converts table cell line breaks to br tags`() {
+        val html = """
+            <table>
+              <tr><th>字段</th><th>值</th></tr>
+              <tr><td>说明</td><td><div>第一行</div><div>第二行</div></td></tr>
+            </table>
+        """.trimIndent()
+
+        val markdown = converter.convertHtml(html)
+
+        assertEquals(
+            """
+            | 字段 | 值 |
+            | --- | --- |
+            | 说明 | 第一行<br/>第二行 |
+            """.trimIndent(),
+            markdown
+        )
+    }
+
+    @Test
+    fun `renders table code block as html pre code and keeps indentation`() {
+        val html = """
+            <table>
+              <tr><th>字段</th><th>代码</th></tr>
+              <tr>
+                <td>示例</td>
+                <td><pre><code class="language-java">if (ok) {
+    System.out.println(&quot;hi&quot;);
+}</code></pre></td>
+              </tr>
+            </table>
+        """.trimIndent()
+
+        val markdown = converter.convertHtml(html)
+
+        assertTrue(markdown.contains("<pre><code class=\"language-java\">if (ok) {<br/>    System.out.println(\"hi\");<br/>}</code></pre>"))
+    }
+
+    @Test
+    fun `replaces nbsp entity and non breaking space with regular spaces`() {
+        val html = "<p>hello&nbsp;world</p><p>foo\u00A0bar</p>"
+
+        val markdown = converter.convertHtml(html)
+
+        assertEquals(
+            """
+            hello world
+
+            foo bar
+            """.trimIndent(),
+            markdown
+        )
+    }
+
+    @Test
+    fun `renders rich text in table cells with html tags and br separators`() {
+        val html = """
+            <table>
+              <tr><th>字段</th><th>内容</th></tr>
+              <tr>
+                <td>描述</td>
+                <td>
+                  <div><strong>加粗</strong> + <em>强调</em></div>
+                  <div><a href="https://example.com">链接</a></div>
+                  <ul><li>条目A</li><li>条目B</li></ul>
+                </td>
+              </tr>
+            </table>
+        """.trimIndent()
+
+        val markdown = converter.convertHtml(html)
+
+        assertTrue(markdown.contains("<strong>加粗</strong> + <em>强调</em><br/><a href=\"https://example.com\">链接</a><br/>- 条目A<br/>- 条目B"))
+    }
+
+    @Test
+    fun `recursively processes deeply nested html elements`() {
+        val html = """
+            <div>
+              <div>
+                <div>
+                  <p>层级1 > 层级2 > 层级3 > 层级4</p>
+                </div>
+              </div>
+            </div>
+        """.trimIndent()
+
+        val markdown = converter.convertHtml(html)
+
+        assertEquals("层级1 > 层级2 > 层级3 > 层级4", markdown)
+    }
+
+    @Test
+    fun `processes deeply nested rich text in table cells`() {
+        val html = """
+            <table>
+              <tr><th>示例</th><th>内容</th></tr>
+              <tr>
+                <td>深层嵌套</td>
+                <td>
+                  <div>
+                    <span>
+                      <strong>
+                        <div>深层富文本</div>
+                      </strong>
+                    </span>
+                  </div>
+                </td>
+              </tr>
+            </table>
+        """.trimIndent()
+
+        val markdown = converter.convertHtml(html)
+
+        assertTrue(markdown.contains("深层富文本"))
     }
 }
