@@ -1,33 +1,33 @@
 <idea-plugin>
-    <id>io.github.liushiyou.pastetomd</id>
+    <id>com.touchkiss.pastetomd</id>
     <name>Paste to Markdown</name>
-    <vendor email="opensource@example.com">liushiyou</vendor>
+    <vendor email="touchkiss@foxmail.com">touchkiss</vendor>
 
     <depends>com.intellij.modules.platform</depends>
     <depends>org.intellij.plugins.markdown</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="io.github.liushiyou.pastetomd.settings.PasteToMarkdownSettings"/>
+        <applicationService serviceImplementation="com.touchkiss.pastetomd.settings.PasteToMarkdownSettings"/>
         <applicationConfigurable
                 parentId="editor"
-                instance="io.github.liushiyou.pastetomd.settings.PasteToMarkdownConfigurable"
-                id="io.github.liushiyou.pastetomd.settings"
+                instance="com.touchkiss.pastetomd.settings.PasteToMarkdownConfigurable"
+                id="com.touchkiss.pastetomd.settings"
                 displayName="Paste to Markdown"/>
     </extensions>
 
     <actions>
         <action id="PasteToMarkdown.PasteOriginal"
-                class="io.github.liushiyou.pastetomd.actions.PasteOriginalAction"
+                class="com.touchkiss.pastetomd.actions.PasteOriginalAction"
                 text="Paste as Original"
                 description="Paste clipboard text without converting rich text to Markdown"/>
         <action id="PasteToMarkdown.ReconvertClipboard"
-                class="io.github.liushiyou.pastetomd.actions.ReconvertClipboardAction"
+                class="com.touchkiss.pastetomd.actions.ReconvertClipboardAction"
                 text="Paste as Markdown"
                 description="Convert the current clipboard content to Markdown and paste it into the editor">
             <keyboard-shortcut keymap="$default" first-keystroke="ctrl meta V"/>
         </action>
         <action id="PasteToMarkdown.ShowClipboardSource"
-                class="io.github.liushiyou.pastetomd.actions.ShowClipboardSourceAction"
+                class="com.touchkiss.pastetomd.actions.ShowClipboardSourceAction"
                 text="Show Clipboard Rich Text Source"
                 description="Display clipboard HTML, RTF, and plain text source for debugging"/>
     </actions>
