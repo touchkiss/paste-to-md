@@ -29,7 +29,7 @@ This is an IntelliJ Platform plugin (Kotlin, targeting 2024.1+) that intercepts 
 
 The core flow: `MarkdownPastePreProcessor` (IntelliJ `CopyPastePreProcessor` extension point) → `PasteToMarkdownService` → `RichTextToMarkdownConverter`.
 
-1. **`MarkdownPastePreProcessor`** — intercepts `Cmd/Ctrl+V` in `.md` files, delegates to `PasteToMarkdownService`, and inserts the result or falls back to standard paste
+1. **`MarkdownPastePreProcessor`** — intercepts `Shift+Cmd/Ctrl+V` in `.md` files, delegates to `PasteToMarkdownService`, and inserts the result or falls back to standard paste
 2. **`PasteToMarkdownService`** — reads clipboard via `ClipboardPayloadExtractor`, decides between html/rtf/plain-text based on settings and heuristics (`shouldPreferPlainText`, `looksLikeMarkdownDocument`), then calls the converter
 3. **`RichTextToMarkdownConverter`** — the main converter; uses Jsoup to parse HTML, then routes to either `FeishuStructuredHtmlParser` (if Feishu markers are detected) or the generic `renderBlocks` path. Output goes through `MarkdownPostProcessor` for cleanup.
 

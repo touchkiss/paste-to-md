@@ -10,7 +10,7 @@ Paste rich text from web pages, Word, Feishu documents, and other preview surfac
 
 Highlights:
 
-- Automatic rich-text to Markdown conversion on normal paste in Markdown files
+- Automatic rich-text to Markdown conversion on `Shift + Cmd/Ctrl + V` paste in Markdown files
 - HTML first, RTF fallback, plain-text safe degradation
 - Preserves headings, tables, links, lists, blockquotes, code blocks, and inline formatting
 - Supports Feishu-specific structured clipboard HTML, including Mermaid text-diagram blocks
@@ -29,7 +29,7 @@ JetBrains 自带的 Markdown 编辑器已经很好用了，但有一个痛点一
 
 这个插件的目标很直接：
 
-- 继续使用 `Cmd/Ctrl + V`
+- 使用 `Shift + Cmd/Ctrl + V` 触发智能粘贴转换
 - 仅在 Markdown 文件中生效
 - 尽量保留结构语义，而不是保留视觉噪音
 - 转换失败时安静降级，不打断输入流
@@ -38,7 +38,7 @@ JetBrains 自带的 Markdown 编辑器已经很好用了，但有一个痛点一
 
 ### 自动粘贴转换
 
-在 Markdown 文件中执行普通粘贴时，插件会优先读取剪贴板中的富文本格式：
+在 Markdown 文件中使用 `Shift + Cmd/Ctrl + V` 粘贴时，插件会优先读取剪贴板中的富文本格式：
 
 1. `text/html`
 2. `text/rtf`
@@ -187,3 +187,5 @@ JetBrains 自带的 Markdown 编辑器已经很好用了，但有一个痛点一
 `Paste to Markdown` 不是把富文本“塞进” Markdown，而是尽量把它“翻译成” Markdown。
 
 前者像搬家时把整间客厅直接推进门里，后者至少知道沙发得先拆开。
+
+
