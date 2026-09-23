@@ -1,18 +1,20 @@
 import org.jetbrains.changelog.markdownToHTML
-import org.jetbrains.intellij.platform.gradle.IntelliJPlatformType
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+import org.jetbrains.kotlin.gradle.dsl.JvmDefaultMode
 
 fun properties(key: String) = project.findProperty(key)?.toString() ?: ""
 
 plugins {
     id("java")
-    kotlin("jvm") version "1.9.24"
-    id("org.jetbrains.intellij.platform") version "2.2.0"
+    kotlin("jvm") version "2.4.20"
+    id("org.jetbrains.intellij.platform") version "2.17.0"
     id("org.jetbrains.changelog") version "2.2.1"
 }
 
 group = properties("pluginGroup")
 version = properties("pluginVersion")
+
+val localIde = file(properties("localIdePath"))
 
 repositories {
     mavenCentral()
@@ -28,11 +30,10 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
 
     intellijPlatform {
-        intellijIdeaCommunity(properties("platformVersion"))
+        local(localIde)
         bundledPlugins(properties("platformBundledPlugins").split(',').map(String::trim).filter(String::isNotEmpty))
         testFramework(org.jetbrains.intellij.platform.gradle.TestFrameworkType.Platform)
         pluginVerifier()
-        instrumentationTools()
         zipSigner()
     }
 }
@@ -47,31 +48,21 @@ intellijPlatform {
             untilBuild = provider { null }
         }
     }
+}
 
-    pluginVerification {
-        ides {
-            properties("pluginVerifierIdeVersions")
-                .split(',')
-                .map(String::trim)
-                .filter(String::isNotEmpty)
-                .forEach { ide(IntelliJPlatformType.IntellijIdeaCommunity, it) }
-            recommended()
-        }
+// The local 2026.2 platform requires Java 25. Keep Java and Kotlin targets aligned.
+java {
+    toolchain.languageVersion.set(JavaLanguageVersion.of(properties("javaVersion")))
+}
+
+kotlin {
+    compilerOptions {
+        jvmTarget.set(JvmTarget.fromTarget(properties("javaVersion")))
+        jvmDefault.set(JvmDefaultMode.ENABLE)
     }
 }
 
 tasks {
-    properties("javaVersion").let {
-        withType<JavaCompile> {
-            sourceCompatibility = it
-            targetCompatibility = it
-        }
-        withType<KotlinCompile> {
-            kotlinOptions.jvmTarget = it
-            kotlinOptions.freeCompilerArgs += listOf("-Xjvm-default=all-compatibility")
-        }
-    }
-
     wrapper {
         gradleVersion = properties("gradleVersion")
     }

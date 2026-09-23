@@ -7,8 +7,8 @@
     <depends>org.intellij.plugins.markdown</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.touchkiss.pastetomd.settings.PasteToMarkdownSettings"/>
-        <applicationConfigurable
+        <projectService serviceImplementation="com.touchkiss.pastetomd.settings.PasteToMarkdownSettings"/>
+        <projectConfigurable
                 parentId="editor"
                 instance="com.touchkiss.pastetomd.settings.PasteToMarkdownConfigurable"
                 id="com.touchkiss.pastetomd.settings"

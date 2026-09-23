@@ -32,7 +32,7 @@ class MarkdownPastePreProcessor : CopyPastePreProcessor {
             return text.orEmpty()
         }
 
-        val settings = PasteToMarkdownSettings.instance().state
+        val settings = PasteToMarkdownSettings.instance(project).state
         if (!settings.enabled) {
             return text.orEmpty()
         }
