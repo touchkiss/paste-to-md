@@ -15,6 +15,7 @@ Highlights:
 - Preserves headings, tables, links, lists, blockquotes, code blocks, and inline formatting
 - Supports Feishu-specific structured clipboard HTML, including Mermaid text-diagram blocks
 - Provides actions to paste original content, reconvert clipboard content, and inspect clipboard source
+- Copy Markdown preview selections for Feishu with `Control + Command + C` on macOS; preserves tables and copies Mermaid diagrams as source code blocks
 
 <!-- Plugin description end -->
 
@@ -35,6 +36,23 @@ JetBrains 自带的 Markdown 编辑器已经很好用了，但有一个痛点一
 - 转换失败时安静降级，不打断输入流
 
 ## 核心能力
+
+### 从 Markdown 预览复制到飞书（Control + Command + C）
+
+macOS 使用步骤：
+
+1. 打开 Markdown 文件，切换到 **纯预览**或**分栏预览**。
+2. 在预览区域选中要复制的内容，按 **Control + Command + C**（`⌃⌘C`）。快捷键只处理具有焦点的预览区域。
+3. 在飞书文档中按 **Command + V**（`⌘V`）粘贴。
+
+复制内容的处理方式：
+
+- **普通内容**：沿用 IDEA 预览原生复制，保留所选内容的结构、格式和顺序。
+- **表格**：在复制的 HTML 中追加 `ace-table`，保留原有 class、属性及单元格内容。
+- **Mermaid 绘图**：复制为完整源码代码块（`pre > code`），清除 SVG、复制按钮、图标和提示文字；粘贴到飞书后为代码块。选中图内部分文字时也会复制完整源码，复制后恢复原选区。
+- **纯文本目标**：普通文字保持原生复制结果，Mermaid 使用 `mermaid` 围栏源码。
+
+也可通过 Find Action 搜索 **Copy Markdown Preview for Feishu**，或在 **Settings → Keymap** 中搜索此动作并修改快捷键。该功能适用于 IDEA 的 **JCEF** Markdown 预览，不修改 Markdown 源文件；普通 `Command + C` 保持原有行为。没有选区或复制失败时会提示。
 
 ### 自动粘贴转换
 
@@ -177,11 +195,11 @@ JetBrains 自带的 Markdown 编辑器已经很好用了，但有一个痛点一
 
 仓库中提供了一些真实样本，适合调转换逻辑时回归：
 
-- `part.html`
+- `res/part.html`
   少量飞书块内容，适合调 `data-lark-record-data` 与文本绘图恢复
 - `data-lark-record-data.json`
   从飞书剪贴板元数据中提取出的结构化 JSON
-- `full.html`
+- `res/full.html`
   富元素飞书文档样本，覆盖标题、表格、列表、引用、代码块、链接等
 - `feishu-doc.html`
   更偏编辑态 DOM 的飞书样例，适合验证块类型识别与性能
@@ -205,5 +223,3 @@ JetBrains 自带的 Markdown 编辑器已经很好用了，但有一个痛点一
 `Paste to Markdown` 不是把富文本“塞进” Markdown，而是尽量把它“翻译成” Markdown。
 
 前者像搬家时把整间客厅直接推进门里，后者至少知道沙发得先拆开。
-
-

@@ -1,0 +1,31 @@
+{
+  "isCut": false,
+  "recordIds": [
+    "ChNzd0Imjo1SFvxlhWZlVUPCgqb"
+  ],
+  "recordMap": {
+    "ChNzd0Imjo1SFvxlhWZlVUPCgqb": {
+      "id": "ChNzd0Imjo1SFvxlhWZlVUPCgqb",
+      "snapshot": {
+        "type": "isv",
+        "children": [],
+        "comments": [],
+        "revisions": [],
+        "data": {
+          "data": "flowchart TD\n    A[开始执行 Jenkins 流水线] --> B[执行 Canary 灰度发布]\n    B --> C{是否为紧急情况?}\n\n    C -- 是 --> D[跳过巡检]\n    D --> M\n\n    C -- 否 --> G[触发第三方巡检接口]\n    G --> H[等待巡检结果]\n    H --> I{巡检是否通过?}\n\n    I -- 否 --> K[飞书通知：巡检失败，禁止全量发布]\n    K --> L[终止流水线 / 关闭发布]\n\n    I -- 是 --> M{是否确认全量发布?}\n    M -- 是 --> N[执行全量滚动发布]\n    M -- 否 --> L\n\n    N --> O[飞书通知：发布完成,如跳过则体现]\n    O --> P[结束]\n\n    L --> P",
+          "theme": "default",
+          "view": "chart"
+        },
+        "app_block_id": "",
+        "block_type_id": "blk_631fefbbae02400430b8f9f4",
+        "manifest": {
+          "view_type": "block_h5",
+          "app_version": "0.0.118"
+        }
+      }
+    }
+  },
+  "payloadMap": {
+    "ChNzd0Imjo1SFvxlhWZlVUPCgqb": {}
+  }
+}

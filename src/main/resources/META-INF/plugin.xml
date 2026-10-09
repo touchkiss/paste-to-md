@@ -7,6 +7,7 @@
     <depends>org.intellij.plugins.markdown</depends>
 
     <extensions defaultExtensionNs="com.intellij">
+        <notificationGroup id="Paste to Markdown" displayType="BALLOON" isLogByDefault="true"/>
         <projectService serviceImplementation="com.touchkiss.pastetomd.settings.PasteToMarkdownSettings"/>
         <projectConfigurable
                 parentId="editor"
@@ -15,7 +16,18 @@
                 displayName="Paste to Markdown"/>
     </extensions>
 
+    <extensions defaultExtensionNs="org.intellij.markdown">
+        <browserPreviewExtensionProvider implementation="com.touchkiss.pastetomd.preview.MarkdownPreviewCopyExtension$Provider"/>
+    </extensions>
+
     <actions>
+        <action id="PasteToMarkdown.CopyPreviewForFeishu"
+                class="com.touchkiss.pastetomd.actions.CopyMarkdownPreviewForFeishuAction"
+                text="Copy Markdown Preview for Feishu"
+                description="Copy the Markdown preview selection with ace-table classes on HTML tables">
+            <keyboard-shortcut keymap="Mac OS X" first-keystroke="ctrl meta C"/>
+            <keyboard-shortcut keymap="Mac OS X 10.5+" first-keystroke="ctrl meta C"/>
+        </action>
         <action id="PasteToMarkdown.PasteOriginal"
                 class="com.touchkiss.pastetomd.actions.PasteOriginalAction"
                 text="Paste as Original"

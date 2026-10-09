@@ -56,7 +56,7 @@ Three registered actions (in `plugin.xml`):
 ## Test Fixtures
 
 Real clipboard samples for regression testing are in the project root:
-- `full.html` — comprehensive Feishu document covering headings, tables, nested lists, code blocks, links
+- `res/full.html` — comprehensive Feishu document covering headings, tables, nested lists, code blocks, links
 - `data-lark-record-data.json` — extracted `data-lark-record-data` JSON from a Feishu clipboard payload
 
 Tests in `converter/` and `paste/` are plain JUnit 5 and do not require an IDE runtime.
