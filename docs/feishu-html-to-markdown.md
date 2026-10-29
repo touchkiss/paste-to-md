@@ -112,7 +112,7 @@
 
 1. 查找 `[data-lark-record-data]`
 2. 读取其属性值
-3. 做 HTML 实体还原
+3. HTML 解析器读取属性时已完成实体还原（Jsoup `attr`），不要再次反转义，以免改写源码中的实体字面量
 4. 解析为 JSON 对象
 5. 取 `recordMap` 作为后续特殊块查询入口
 
@@ -137,6 +137,8 @@ recordMap = JSON.parse(unescape(data-lark-record-data)).recordMap
 - 以一级子节点为 block 入口
 - 每个入口调用 `renderElement(block)`
 - 将结果按顺序拼接成 Markdown blocks
+
+注意：文本绘图也可能嵌在 `ol > li > div`、引用等容器内，不能只在根节点的一级子节点上识别。渲染前应在整棵内容树中按 ID 还原占位节点为 `pre > code.language-mermaid`，保留原位置，再由已有容器渲染逻辑处理。DOM 替换必须在并行渲染启动前完成。
 
 ## 6. 文本绘图元素还原机制
 

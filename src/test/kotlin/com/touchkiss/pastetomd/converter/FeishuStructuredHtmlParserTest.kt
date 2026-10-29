@@ -3,13 +3,37 @@ package com.touchkiss.pastetomd.converter
 import com.fasterxml.jackson.databind.ObjectMapper
 import org.jsoup.Jsoup
 import java.io.File
-import kotlin.test.Test
-import kotlin.test.assertContains
-import kotlin.test.assertFalse
+import kotlin.test.*
 
 class FeishuStructuredHtmlParserTest {
 
     private val converter = RichTextToMarkdownConverter()
+
+    @Test
+    fun `restores nested diagrams in source order from trailing escaped metadata`() {
+        val document = Jsoup.parseBodyFragment("""
+            <div data-lark-html-role="root"><ol><li>流程
+                <div><p>之前</p><span class="block-id-first block-type-ISV_BLOCK">占位提示</span>
+                <p>中间</p><span class="block-id-second block-type-ISV_BLOCK">占位提示</span><p>之后</p></div>
+            </li></ol></div>
+        """.trimIndent())
+        val first = "flowchart TD\n    A[\"&quot; & <tag>\"] --> B"
+        val second = "sequenceDiagram\n    X->>Y: hi"
+        // Deliberately reverse metadata order: output must follow the HTML positions.
+        document.body().appendElement("span").attr("data-lark-record-data", ObjectMapper().writeValueAsString(mapOf(
+            "recordMap" to linkedMapOf("second" to second, "first" to first).mapValues { (_, source) ->
+                mapOf("snapshot" to mapOf("type" to "isv", "data" to mapOf("data" to source)))
+            },
+        )))
+
+        val markdown = converter.convertHtml(document.body().html())
+        assertEquals(2, Regex("```mermaid").findAll(markdown).count())
+        assertContains(markdown, "A[\"&quot; & <tag>\"] --> B")
+        assertContains(markdown, "X->>Y: hi")
+        val positions = listOf("之前", "flowchart TD", "中间", "sequenceDiagram", "之后").map(markdown::indexOf)
+        assertTrue(positions.all { it >= 0 } && positions.zipWithNext().all { (a, b) -> a < b }, markdown)
+        assertFalse(markdown.contains("占位提示"))
+    }
 
     @Test
     fun `converts mermaid isv block and skips whiteboard`() {

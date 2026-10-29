@@ -1,7 +1,7 @@
 package com.touchkiss.pastetomd.preview
 
 import com.fasterxml.jackson.databind.ObjectMapper
-import com.touchkiss.pastetomd.converter.FeishuStructuredHtmlParser
+import com.touchkiss.pastetomd.converter.RichTextToMarkdownConverter
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
 import org.jsoup.nodes.Element
@@ -141,8 +141,8 @@ class FeishuMermaidClipboardEncoderTest {
         assertTrue(output.contains("&quot;"))
 
         // Use the actual output root rather than adding a test-only wrapper.
-        val restored = FeishuStructuredHtmlParser().parse(document) { _, _ -> emptyList() }
-        assertEquals(listOf("```mermaid\n${source.trim()}\n```"), restored)
+        val restored = RichTextToMarkdownConverter().convertHtml(output)
+        assertEquals("```mermaid\n${source.trim()}\n```", restored)
     }
 
     @Test

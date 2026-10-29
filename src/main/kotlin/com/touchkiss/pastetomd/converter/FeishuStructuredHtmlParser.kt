@@ -15,6 +15,20 @@ class FeishuStructuredHtmlParser(
     ): List<String>? {
         val root = document.selectFirst("[data-lark-html-role=root]")
         val recordMap = parseRecordMap(document)
+        // Resolve placeholders before rendering containers: diagrams can be nested in lists/quotes.
+        // Mutate the tree before parallel rendering starts so all renderers see ordinary code blocks.
+        document.getAllElements().filter { element ->
+            element.classNames().any { it.equals("block-type-ISV_BLOCK", ignoreCase = true) }
+        }.forEach { element ->
+            val source = mermaidSource(element, recordMap)
+            if (source == null) {
+                element.remove()
+            } else {
+                val pre = Element("pre")
+                pre.appendChild(Element("code").addClass("language-mermaid").text(source))
+                element.replaceWith(pre)
+            }
+        }
         val children = if (root != null) {
             root.children().toList()
         } else {
@@ -31,7 +45,6 @@ class FeishuStructuredHtmlParser(
         return ParallelRenderSupport.mapOrdered(children) { child ->
                 when {
                     child.attr("data-type").equals("whiteboard", ignoreCase = true) -> emptyList()
-                    child.classNames().any { it.equals("block-type-ISV_BLOCK", ignoreCase = true) } -> renderIsvBlock(child, recordMap)
                     else -> renderElement(child, 0)
                 }
             }
@@ -40,41 +53,31 @@ class FeishuStructuredHtmlParser(
             .filter(String::isNotBlank)
     }
 
-    private fun renderIsvBlock(element: Element, recordMap: JsonNode?): List<String> {
+    private fun mermaidSource(element: Element, recordMap: JsonNode?): String? {
         val blockId = element.classNames()
             .firstOrNull { it.startsWith("block-id-") }
             ?.removePrefix("block-id-")
             ?.trim()
-            ?: return emptyList()
+            ?: return null
 
         val snapshot = recordMap?.path(blockId)?.path("snapshot")
         if (snapshot == null || snapshot.isMissingNode) {
-            return emptyList()
+            return null
         }
 
         val type = snapshot.path("type").asText("")
         if (type.equals("whiteboard", ignoreCase = true)) {
-            return emptyList()
+            return null
         }
         if (!type.equals("isv", ignoreCase = true)) {
-            return emptyList()
+            return null
         }
 
-        val mermaid = snapshot.path("data").path("data").asText("").trim()
-        if (mermaid.isBlank()) {
-            return emptyList()
-        }
-
-        return listOf(
-            buildString {
-                append("```mermaid\n")
-                append(mermaid)
-                append("\n```")
-            }
-        )
+        return snapshot.path("data").path("data").asText("").trim().takeIf(String::isNotBlank)
     }
 
     private fun parseRecordMap(document: Document): JsonNode? {
+        // Jsoup has already decoded HTML entities in attribute values; do not unescape again.
         val raw = document.selectFirst("[data-lark-record-data]")?.attr("data-lark-record-data")?.trim()
             ?: return null
         if (raw.isBlank()) {
