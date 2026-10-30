@@ -23,7 +23,9 @@ class MarkdownPreviewCopyService : Disposable {
     }
 
     fun copy(project: Project) {
-        val preview = focused(project)
+        // Native JCEF focus is not always represented by an AWT descendant.
+        // Only probe an unambiguous visible preview; JS checks document.hasFocus.
+        val preview = focused(project) ?: previews.filter { it.project == project && it.isActive() }.singleOrNull()
         if (preview == null) {
             MarkdownPreviewCopyExtension.notify(project, "请在已加载的 JCEF Markdown 预览中选择内容后复制。")
         } else {

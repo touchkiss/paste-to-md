@@ -5,6 +5,7 @@ import com.intellij.notification.NotificationGroupManager
 import com.intellij.notification.NotificationType
 import com.intellij.openapi.actionSystem.KeyboardShortcut
 import com.intellij.openapi.application.ApplicationManager
+import com.intellij.openapi.diagnostic.Logger
 import com.intellij.openapi.fileEditor.FileEditorManager
 import com.intellij.openapi.ide.CopyPasteManager
 import com.intellij.openapi.keymap.Keymap
@@ -94,7 +95,7 @@ class MarkdownPreviewCopyExtension(private val panel: MarkdownHtmlPanel) :
         alarm.cancelAllRequests()
         alarm.addRequest({
             if (requests.expire(id) && isActive()) notify(project, "Markdown 预览复制超时，请稍后重试。")
-        }, 3000)
+        }, PreviewCopyRequest.TIMEOUT_MS)
         try {
             pipe.send(REQUEST, id.toString())
         } catch (_: Exception) {
@@ -110,7 +111,7 @@ class MarkdownPreviewCopyExtension(private val panel: MarkdownHtmlPanel) :
             val result = mapper.readTree(data)
             val id = result.path("requestId").asLong(-1)
             responseId = id
-            val valid = isActive() && project?.let { service.focused(it) === this } == true
+            val valid = isActive()
             if (!requests.isPending(id) || !valid) return
             val error = result.path("error").asText("")
             if (error.isNotEmpty()) {
@@ -122,49 +123,45 @@ class MarkdownPreviewCopyExtension(private val panel: MarkdownHtmlPanel) :
                     "not-focused" -> "请在 Markdown 预览中选择内容后复制。"
                     "mermaid-source-missing" -> "所选 Mermaid 缺少绘图源码，剪贴板保持不变。"
                     "mermaid-source-invalid" -> "所选 Mermaid 源码编码无效，剪贴板保持不变。"
-                    "native-copy-failed" -> "预览原生复制失败，请重新选择后重试。"
+                    "selection-read-failed" -> "读取预览选区失败，请重新选择后重试。"
                     else -> "无法读取 Markdown 预览选区，请重新选择后重试。"
                 })
                 return
             }
-            require(result.path("nativeCopy").asBoolean(false))
+            require(result.path("html").isTextual && result.path("text").isTextual)
             val sourcesNode = result.path("sources")
             require(sourcesNode.isArray && sourcesNode.all { it.isTextual })
             val sources = sourcesNode.map { it.asText() }
-            require(sources.isEmpty() || result.path("text").isTextual)
-            // The browser has performed native copy. Read its HTML, including
-            // Chromium's selected structural context, before applying our edits.
+            val html = result.path("html").asText()
+            val text = result.path("text").asText()
             val native = clipboard.readFromSystemClipboard()
-            val html = native?.html
-            if (html.isNullOrEmpty()) {
-                requests.finish(id, valid)
-                alarm.cancelAllRequests()
-                notify(project, "原生复制未提供 HTML，已保留原生剪贴板内容。")
-                return
-            }
-            val text = if (sources.isEmpty()) native?.plainText.orEmpty() else result.path("text").asText()
             // Normalize off the EDT; stale requests must not overwrite newer clipboard content.
             ApplicationManager.getApplication().executeOnPooledThread {
-                val normalized = runCatching { normalizer.normalize(html, sources) }
+                val normalized = runCatching { PreviewHtmlTransferable(normalizer.normalize(html, sources), text) }
                 onEdt {
-                    val current = isActive() && project?.let { service.focused(it) === this } == true &&
+                    val current = isActive() &&
                         runCatching { clipboard.readFromSystemClipboard() == native }.getOrDefault(false)
                     if (requests.finish(id, current)) {
                         alarm.cancelAllRequests()
                         normalized.fold(
                             onSuccess = { output ->
                                 try {
-                                    CopyPasteManager.getInstance().setContents(PreviewHtmlTransferable(output, text))
-                                } catch (_: Exception) {
+                                    CopyPasteManager.getInstance().setContents(output)
+                                } catch (error: Exception) {
+                                    LOG.warn("Cannot write preview clipboard", error)
                                     notify(project, "处理预览复制失败，已保留当前剪贴板内容。")
                                 }
                             },
-                            onFailure = { notify(project, "Mermaid 源码与原生 HTML 不匹配，已保留原生复制内容。") },
+                            onFailure = {
+                                LOG.warn("Cannot prepare preview clipboard", it)
+                                notify(project, "预览内容或图片处理失败，已保留当前剪贴板内容。")
+                            },
                         )
                     }
                 }
             }
-        } catch (_: Exception) {
+        } catch (error: Exception) {
+            LOG.warn("Cannot read preview copy response", error)
             // A malformed or old response must not cancel a newer request.
             val id = responseId ?: return
             if (!requests.isPending(id)) return
@@ -211,6 +208,7 @@ class MarkdownPreviewCopyExtension(private val panel: MarkdownHtmlPanel) :
     }
 
     companion object {
+        private val LOG = Logger.getInstance(MarkdownPreviewCopyExtension::class.java)
         const val ACTION_ID = "PasteToMarkdown.CopyPreviewForFeishu"
         private const val SCRIPT = "paste-to-md-preview-copy.js"
         private const val READY = "paste-to-md/copy-ready"

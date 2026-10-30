@@ -4,6 +4,15 @@ import kotlin.test.*
 
 class PreviewCopyRequestTest {
     @Test
+    fun `large image preparation has time beyond the native clipboard timeout`() {
+        var time = 0L
+        val requests = PreviewCopyRequest { time }
+        val id = assertNotNull(requests.start())
+        time = 4_000_000_000L
+        assertTrue(requests.finish(id, true))
+    }
+
+    @Test
     fun `conversion can inspect a pending request without consuming it`() {
         var time = 0L
         val requests = PreviewCopyRequest { time }
@@ -24,7 +33,7 @@ class PreviewCopyRequestTest {
         val requests = PreviewCopyRequest { time }
         val id = assertNotNull(requests.start())
         assertTrue(requests.isPending(id))
-        time = 3_000_000_000L
+        time = 30_000_000_000L
         assertFalse(requests.isPending(id))
         assertFalse(requests.finish(id, true))
         assertTrue(requests.expire(id))
@@ -59,7 +68,7 @@ class PreviewCopyRequestTest {
         var time = 0L
         val requests = PreviewCopyRequest { time }
         val expired = assertNotNull(requests.start())
-        time = 3_000_000_000L
+        time = 30_000_000_000L
         assertFalse(requests.finish(expired, true))
         val switched = assertNotNull(requests.start())
         assertFalse(requests.finish(switched, false))

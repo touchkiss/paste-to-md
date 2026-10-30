@@ -12,7 +12,7 @@ internal class PreviewCopyRequest(private val now: () -> Long = System::nanoTime
         // JCEF and the IDE can both dispatch the same physical keystroke.
         if (lastStart?.let { time - it < 100_000_000L } == true) return null
         lastStart = time
-        deadline = time + 3_000_000_000L
+        deadline = time + TIMEOUT_MS * 1_000_000L
         return (++sequence).also { pending = it }
     }
 
@@ -33,4 +33,6 @@ internal class PreviewCopyRequest(private val now: () -> Long = System::nanoTime
     }
 
     fun cancel() { pending = null }
+
+    companion object { const val TIMEOUT_MS = 30_000 }
 }

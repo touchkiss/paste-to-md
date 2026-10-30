@@ -75,9 +75,8 @@
       .map(element => ({ element, root: diagramRoot(element) }))
       .filter(({ root }) => overlaps(range, nodeRange(root)))
       .map(({ element, root }) => ({ root, source: sourceForDiagram(element) }));
-    // Validate all sources before changing the clipboard. Copy with the browser's
-    // native command, rather than reconstructing ordinary HTML from a Range.
-    const nativeRange = range.cloneRange();
+    // Snapshot the selected DOM without racing the asynchronous native clipboard.
+    const snapshotRange = range.cloneRange();
     let text = "";
     let cursor = startOf(range);
     for (const { root, source } of diagrams) {
@@ -92,27 +91,45 @@
       text += (text && !text.endsWith("\n\n") ? "\n\n" : "") + diagramFence(source);
       cursor = compare(endOf(bounds), endOf(range)) < 0 ? endOf(bounds) : endOf(range);
       if (compare(cursor, endOf(range)) < 0) text += "\n\n";
-      if (compare(startOf(range), before) > 0) nativeRange.setStartBefore(root);
-      if (compare(endOf(range), endOf(bounds)) < 0) nativeRange.setEndAfter(root);
+      if (compare(startOf(range), before) > 0) snapshotRange.setStartBefore(root);
+      if (compare(endOf(range), endOf(bounds)) < 0) snapshotRange.setEndAfter(root);
     }
     if (compare(cursor, endOf(range)) < 0) {
       const gap = range.cloneRange();
       gap.setStart(cursor.startContainer, cursor.startOffset);
       text += gap.toString();
     }
-    const anchorNode = selection.anchorNode, anchorOffset = selection.anchorOffset;
-    const focusNode = selection.focusNode, focusOffset = selection.focusOffset;
-    try {
-      if (diagrams.length) {
-        selection.removeAllRanges();
-        selection.addRange(nativeRange);
+    const container = document.createElement("div");
+    container.appendChild(snapshotRange.cloneContents());
+    // cloneContents omits the common ancestor. Restore semantic containers,
+    // especially table/tbody/tr/td when the selection starts inside a cell.
+    let ancestor = snapshotRange.commonAncestorContainer;
+    if (ancestor.nodeType !== Node.ELEMENT_NODE) ancestor = ancestor.parentElement;
+    while (ancestor && ancestor !== document.body && ancestor !== document.documentElement) {
+      if (/^(TABLE|THEAD|TBODY|TFOOT|TR|TD|TH|UL|OL|LI|P|BLOCKQUOTE|PRE|CODE|H[1-6]|STRONG|EM|B|I|A)$/.test(ancestor.tagName)) {
+        const wrapper = ancestor.cloneNode(false);
+        while (container.firstChild) wrapper.appendChild(container.firstChild);
+        container.appendChild(wrapper);
       }
-      if (!document.execCommand("copy")) return { error: "native-copy-failed" };
-    } finally {
-      if (diagrams.length) selection.setBaseAndExtent(anchorNode, anchorOffset, focusNode, focusOffset);
+      ancestor = ancestor.parentElement;
     }
-    return { nativeCopy: true, sources: diagrams.map(block => block.source),
-      text: diagrams.length ? text : null };
+    // Preview chrome is not document content. Its CSS-only image icons may
+    // have an empty src, which would otherwise resolve to the document directory.
+    container.querySelectorAll(".code-fence-highlighter-copy-button,.code-fence-highlighter-copy-button-icon")
+      .forEach(element => element.remove());
+    container.querySelectorAll("img").forEach(image => {
+      const source = image.getAttribute("src")?.trim();
+      if (!source) {
+        image.replaceWith(document.createTextNode(image.getAttribute("alt") || ""));
+        return;
+      }
+      image.setAttribute("src", new URL(source, document.baseURI).href);
+    });
+    container.querySelectorAll("a[href]").forEach(link => {
+      link.setAttribute("href", new URL(link.getAttribute("href"), document.baseURI).href);
+    });
+    return { html: container.innerHTML, sources: diagrams.map(block => block.source),
+      text: diagrams.length ? text : selection.toString() };
   }
 
   pipe.subscribe("paste-to-md/copy-request", requestId => {
@@ -121,7 +138,7 @@
       result = copySelection();
     } catch (error) {
       const known = ["mermaid-source-missing", "mermaid-source-invalid"];
-      result = { error: known.includes(error.message) ? error.message : "native-copy-failed" };
+      result = { error: known.includes(error.message) ? error.message : "selection-read-failed" };
     }
     pipe.post("paste-to-md/copy-result", JSON.stringify({ requestId, ...result }));
   });

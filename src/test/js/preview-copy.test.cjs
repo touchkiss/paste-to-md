@@ -44,23 +44,23 @@ function diagram(source) {
   return `<pre class="code-fence"><div class="code-fence-highlighter-copy-button"><span class="tooltiptext">Copy to clipboard</span></div><code class="language-mermaid"><div class="mermaid" data-actual-fence-content="${Buffer.from(source).toString("base64")}"><svg><text>diagram label</text></svg></div></code></pre>`;
 }
 
-test("ordinary HTML comes exclusively from one native copy with unchanged selection and DOM", () => {
+test("ordinary HTML snapshot preserves selection and DOM without native clipboard access", () => {
   const f = fixture("<p><strong>before</strong></p><table class='existing'><tr><td>cell</td></tr></table><p>after</p>");
   const paragraphs = f.document.querySelectorAll("p");
   f.select(paragraphs[0].firstChild.firstChild, 2, paragraphs[1].firstChild, 3);
   const before = f.document.body.innerHTML;
   const result = f.copy();
-  assert.equal(result.nativeCopy, true);
+  assert.equal(result.nativeCopy, undefined);
   assert.deepEqual(result.sources, []);
-  assert.equal(result.html, undefined); // The backend reads native clipboard HTML.
-  assert.equal(result.text, null); // Keep native plain text for ordinary content.
-  assert.equal(f.nativeCopies.length, 1);
+  assert.ok(result.html.includes("<table"));
+  assert.equal(result.text, "forecellaft");
+  assert.equal(f.nativeCopies.length, 0);
   assert.equal(f.document.body.innerHTML, before);
   assert.equal(f.dom.window.getSelection().toString(), "forecellaft");
   f.dom.window.close();
 });
 
-test("partial Mermaid label or toolbar selects complete native fence then restores original selection", () => {
+test("partial Mermaid label or toolbar snapshots the complete fence without changing selection", () => {
   for (const selector of ["text", ".tooltiptext"]) {
     const source = 'flowchart LR\nA[中文 😀 &<>" &quot; ```] --> B';
     const f = fixture(diagram(source));
@@ -68,10 +68,12 @@ test("partial Mermaid label or toolbar selects complete native fence then restor
     f.select(label, 1, label, 4);
     const original = f.document.body.innerHTML;
     const result = f.copy();
-    assert.equal(result.nativeCopy, true);
+    assert.equal(result.nativeCopy, undefined);
     assert.deepEqual(result.sources, [source]);
     assert.equal(result.text, "````mermaid\n" + source + "\n````");
-    assert.equal(f.nativeCopies[0], original);
+    const expected = f.document.body.cloneNode(true);
+    expected.querySelectorAll(".code-fence-highlighter-copy-button").forEach(node => node.remove());
+    assert.equal(result.html, expected.innerHTML);
     assert.equal(f.dom.window.getSelection().anchorNode, label);
     assert.equal(f.dom.window.getSelection().anchorOffset, 1);
     assert.equal(f.dom.window.getSelection().focusOffset, 4);
@@ -89,7 +91,7 @@ test("mixed and repeated diagrams retain source order and ordinary text boundari
   assert.ok(result.text.startsWith("fore\n\n```mermaid"));
   assert.ok(result.text.endsWith("\n\naft"));
   assert.ok(!result.text.includes("Copy to clipboard") && !result.text.includes("diagram label"));
-  assert.ok(!f.nativeCopies[0].includes("unselected"));
+  assert.ok(!result.html.includes("unselected"));
   f.dom.window.close();
 });
 
@@ -100,8 +102,8 @@ test("diagram endpoints expand only diagram boundaries and restore backward sele
   selection.setBaseAndExtent(labels[1].firstChild, 4, labels[0].firstChild, 3);
   const result = f.copy();
   assert.equal(result.sources.length, 2);
-  assert.ok(!f.nativeCopies[0].includes("before") && !f.nativeCopies[0].includes("after"));
-  assert.ok(f.nativeCopies[0].includes("between"));
+  assert.ok(!result.html.includes("before") && !result.html.includes("after"));
+  assert.ok(result.html.includes("between"));
   assert.equal(selection.anchorNode, labels[1].firstChild);
   assert.equal(selection.anchorOffset, 4);
   assert.equal(selection.focusNode, labels[0].firstChild);
@@ -112,8 +114,9 @@ test("diagram endpoints expand only diagram boundaries and restore backward sele
 test("adjacent unselected diagrams and ordinary SVG are not Mermaid sources", () => {
   const f = fixture(`${diagram("excluded-left")}<p>selected</p><svg><text>ordinary</text></svg>${diagram("excluded-right")}`);
   f.select(f.document.body, 1, f.document.body, 3);
-  assert.deepEqual(f.copy().sources, []);
-  assert.ok(f.nativeCopies[0].includes("<svg>"));
+  const result = f.copy();
+  assert.deepEqual(result.sources, []);
+  assert.ok(result.html.includes("<svg>"));
   f.dom.window.close();
 });
 
@@ -136,13 +139,13 @@ test("source is read again after a preview patch", () => {
   f.dom.window.close();
 });
 
-test("native copy rejection or exception restores the original Mermaid selection", () => {
+test("native copy availability does not affect the snapshot or selection", () => {
   for (const throws of [false, true]) {
     const f = fixture(diagram("flowchart TD; A-->B"));
     const label = f.document.querySelector("text").firstChild;
     f.select(label, 1, label, 4);
     f.document.execCommand = () => { if (throws) throw new Error("copy unavailable"); return false; };
-    assert.equal(f.copy().error, "native-copy-failed");
+    assert.ok(f.copy().html.includes("mermaid"));
     assert.equal(f.dom.window.getSelection().anchorNode, label);
     assert.equal(f.dom.window.getSelection().anchorOffset, 1);
     assert.equal(f.dom.window.getSelection().focusOffset, 4);
@@ -190,5 +193,41 @@ test("two-stroke shortcuts require the configured second stroke", () => {
     key, code: `Key${key.toUpperCase()}`, ctrlKey: true, cancelable: true,
   }));
   assert.equal(f.posted.filter(item => item.tag === "paste-to-md/copy-shortcut").length, 1);
+  f.dom.window.close();
+});
+
+ test("partial table selection retains table ancestors without unselected cells", () => {
+ const f = fixture("<table><tr><td>skip</td><td><b>selected</b></td></tr></table>");
+ const text = f.document.querySelector("b").firstChild;
+ f.select(text, 1, text, 5);
+ const result = f.copy();
+ assert.ok(result.html.includes("<table"));
+ assert.ok(result.html.includes("<td"));
+ assert.ok(result.html.includes("elec"));
+ assert.ok(!result.html.includes("skip"));
+ f.dom.window.close();
+ });
+
+test("large table snapshot keeps every selected row and image URL", () => {
+  const rows = Array.from({ length: 2000 }, (_, i) => `<tr><td>${i}</td><td>${"内容".repeat(30)}</td></tr>`).join("");
+  const f = fixture(`<table>${rows}</table><img src='http://localhost:63342/markdownPreview/123//tmp/picture.png'>`);
+  f.select(f.document.body, 0, f.document.body, 2);
+  const result = f.copy();
+  const copy = new JSDOM(result.html);
+  assert.equal(copy.window.document.querySelectorAll("tr").length, 2000);
+  assert.equal(copy.window.document.querySelector("img").getAttribute("src"), "http://localhost:63342/markdownPreview/123//tmp/picture.png");
+  assert.equal(f.nativeCopies.length, 0);
+  copy.window.close(); f.dom.window.close();
+});
+
+test("full selection excludes code toolbar icons and never resolves empty image URLs to document directory", () => {
+  const f = fixture(`<base href="http://localhost:63342/markdownPreview/123//tmp/docs/"><p>before</p><pre class="code-fence"><div class="code-fence-highlighter-copy-button"><img class="code-fence-highlighter-copy-button-icon" src=""><span class="tooltiptext">Copy to clipboard</span></div><code>hello()</code></pre><img src=""><img><img src="image.png"><p>after</p>`);
+  f.select(f.document.body, 0, f.document.body, f.document.body.childNodes.length);
+  const result = f.copy();
+  const snapshot = new JSDOM(result.html).window.document;
+  assert.equal(snapshot.querySelectorAll(".code-fence-highlighter-copy-button").length, 0);
+  assert.equal(snapshot.querySelectorAll("img").length, 1);
+  assert.equal(snapshot.querySelector("img").getAttribute("src"), "http://localhost:63342/markdownPreview/123//tmp/docs/image.png");
+  assert.equal(snapshot.querySelector("code").textContent, "hello()");
   f.dom.window.close();
 });
